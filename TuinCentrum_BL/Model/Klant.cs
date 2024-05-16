@@ -8,15 +8,18 @@ namespace TuinCentrum_BL.Model
 {
     public class Klant
     {
-        public int? Id { get; set; }
+        private string naam;
         public string Naam { get; set; }
+        private string adres;
         public string Adres { get; set; }
 
-        public Klant(int? id, string naam, string adres)
+        public Klant(string naam, string adres)
         {
-            Id = id;
             Naam = naam;
             Adres = adres;
         }
+
+
     }
+            
 }
