@@ -1,0 +1,1253 @@
+1|Dwerg zilverspar|Abies balsamea 'Nana'|12|15-20cm C2
+2|Colorado Zilverspar|Abies concolor|24|80-100cm kluit
+3|Colorado Zilverspar|Abies concolor|32|100-125cm kluit
+4|Koreaanse zilverspar|Abies koreana|18|60-80cm kluit
+5|Koreaanse zilverspar|Abies koreana|26|80-100cm kluit
+6|Koreaanse zilverspar|Abies koreana|32|100-125cm kluit
+7|Koreaanse zilverspar|Abies koreana|38|125-150cm kluit
+8|Bergzilverspar (dwerg)|Abies lasiocarpa 'Compacta'|28|30-40cm kluit
+9|Nordmannspar|Abies nordmanniana|18|60-80cm kluit
+10|Nordmannspar|Abies nordmanniana|26|80-100cm kluit
+11|Nordmannspar|Abies nordmanniana|32|100-125cm kluit
+12|Nordmannspar|Abies nordmanniana|38|125-150cm kluit
+13|Slangenden|Araucaria araucana|38|35-40cm C5
+14|Himalayaceder|Cedrus deodara|22|80-100cm kluit
+15|Himalayaceder|Cedrus deod. 'Golden Horizon'|18|40-50cm kluit
+16|Himalayaceder|Cedrus deod. 'Karl Fuchs'|28|80-100cm kluit
+17|Blauwe ceder / Atlasceder|Cedrus libani 'Glauca'|44|125-150cm kluit
+18|Blauwe ceder / Atlasceder|Cedrus libani 'Glauca'|64|150-175cm kluit
+19|Knoptaxus|Cephalotaxus h. 'Fastigiata'|22|60-80cm kluit
+20|Californische cipres|Chamaecyparis l. 'Columnaris'|8|80-100cm kluit
+21|Californische cipres|Chamaecyparis l. 'Columnaris'|11|100-125cm kluit
+22|Californische cipres|Chamaecyparis l. 'Columnaris'|15|125-150cm kluit
+23|Californische cipres|Chamaecyparis l. 'Columnaris'|19|150-175cm kluit
+24|Californische cipres|Chamaecyparis l. 'Columnaris'|24|175-200cm kluit
+25|Californische cipres|Chamaecyparis l. 'Ivonne'|6|60-80cm kluit
+26|Californische cipres|Chamaecyparis l. 'Ivonne'|8|80-100cm kluit
+27|Californische cipres|Chamaecyparis l. 'Ivonne'|11|100-125cm kluit
+28|Californische cipres|Chamaecyparis l. 'Ivonne'|15|125-150cm kluit
+29|Californische cipres|Chamaecyparis l. 'Ivonne'|19|150-175cm kluit
+30|Californische cipres|Chamaecyparis l. 'Ivonne'|24|175-200cm kluit
+31|Californische cipres|Chamaecyparis l. 'Ivonne'|26|100cm stam
+32|Californische Cypres|Chamaecyparis l. 'Sunkist'|9,5|25-30cm C3
+33||Chamaecyparis nootk. 'Pendula'|42|80-100cm kluit
+34|Dwergcypres|Chamaecyparis obt. 'Nana Gracilis'|14|20-25cm C3
+35||Chamaecyparis p. 'Baby Blue'|9,5|25-30cm C2
+36||Chamaecyparis p. 'Boulevard'|11|20-30cm C3
+37||Chamaecyparis pis. 'Filifera Aurea'|9,5|25-30cm C3
+38|Schijncipres / Draadcipres|Chamaecyparis pis. 'Filifera Nana'|9,5|25-30cm C3
+39|Schijncipres / Draadcipres|Chamaecyparis pis. 'Sungold'|9,5|25-30cm C3
+40|Japanse Sikkelden|Cryptomeria j. 'Elegans Viridis'|11|30-40cm C3
+41|Japanse Sikkelden|Cryptomeria j. 'Elegans'|28|80-100cm kluit
+42|Leylandconifeer|Cupressocyparis leylandii|8|80-100cm kluit
+43|Leylandconifeer|Cupressocyparis leylandii|10|100-125cm kluit
+44|Leylandconifeer|Cupressocyparis leylandii|13|125-150cm kluit
+45|Leylandconifeer|Cupressocyparis leylandii|17|150-175cm kluit
+46|Leylandconifeer|Cupressocyparis leylandii|22|175-200cm kluit
+47|Leylandconifeer|Cupressocyparis leylandii|28|200-225cm kluit
+48|Leylandconifeer|Cupressocyparis l. 'Gold Rider'|9|80-100cm kluit
+49|Leylandconifeer|Cupressocyparis l. 'Gold Rider'|14|100-125cm kluit
+50|Japanse notenboom|Ginkgo biloba 'Mariken'|34|80cm stam
+51|Japanse noteboom|Ginkgo biloba 'Menhir'|22|50-60cm C3
+52|Jeneverbes|Juniperus chin. 'Stricta'|9,5|30-40cm C3
+53|Jeneverbes|Juniperus comm. 'Hibernica'|17|80-100cm kluit
+54|Jeneverbes|Juniperus comm. 'Hibernica'|22|100-125cm kluit
+55|Kruip jeneverbes|Juniperus comm. 'Repanda'|9,5|25-30cm C3
+56|Kruip jeneverbes|Juniperus hor. 'Blue Chip'|9,5|25-30cm C3
+57|Kruip jeneverbes|Juniperus xpfitz. 'Old Gold'|9,5|25-30cm C3
+58|Kruip jeneverbes|Juniperus xpfitz.. Compacta'|9,5|25-30cm C3
+59|Kruip jeneverbes|Juniperus xpfitz. 'Pfitzeriana Aurea'|9,5|25-30cm C3
+60|Kruip jeneverbes|Juniperus procumbens 'Nana'|9,5|25-30cm C3
+61|Zuil jeneverbes|Juniperus scop. 'Blue Arrow'|18|80-100cm kluit
+62|Zuil jeneverbes|Juniperus scop. 'Blue Arrow'|24|100-125cm kluit
+63|Kruip jeneverbes|Juniperus squamata 'Blue Carpet'|9,5|25-30cm C3
+64|Kruip jeneverbes|Juniperus squamata 'Blue Star'|9,5|25-30cm C3
+65|Kruip jeneverbes|Juniperus squamata 'Holger'|8,5|20-25cm C3
+66|Chineese moerascipres|Metasequoia glyptostroboides|18|100-125cm kluit
+67||Microbiota decussata|9,5|25-30cm C3
+68||Picea abies 'Nidiformis'|11|25-30cm C3
+69||Picea abies 'Ohlendorffii'|11|20-25cm C3
+70||Picea glauca 'Alberta Globe'|11|20-25cm C3
+71|Dwergspar|Picea glauca 'Conica'|11|50-60cm C5
+72|Dwergspar|Picea glauca 'Conica'|14|60-70cm C10
+73|Dwergspar|Picea glauca 'Conica'|18|70-80cm kluit
+74||Picea glauca 'Echiniformis'|11|25-30cm C3
+75|Servische spar|Picea omorika|11|100-125cm kluit
+76|Servische spar|Picea omorika|14|125-150cm kluit
+77|Servische spar|Picea omorika|18|150-175cm kluit
+78|Servische spar|Picea omorika|22|175-200cm kluit
+79| Alpenden|Pinus cembra 'Glauca'|35|50-60cm kluit
+80|Bergden|Pinus mugo mughus|9,5|25-30cm C3
+81|Bergden|Pinus mugo pumilio|9,5|25-30cm C3
+82|Oostenrijkse den|Pinus nigra subsp. nigra|14|60-80cm kluit
+83|Oostenrijkse den|Pinus nigra subsp. nigra|18|80-100cm kluit
+84|Oostenrijkse den|Pinus nigra subsp. nigra|28|100-125cm kluit
+85|Oostenrijkse den|Pinus nigra subsp. nigra|38|125-150cm kluit
+86||Pinus strobus|16|60-80cm kluit
+87||Pinus strobus 'Blue Shag'|22|30-40cm kluit
+88||Pinus sylvestris 'Fastigiata'|32|60-70cm kluit
+89||Pinus sylvestris 'Watereri'|28|30-40cm kluit
+90||Pinus wallichiana|19|60-80cm kluit
+91|Parasolden|Sciadopitys verticillata|32|30-40cm kluit
+92||Sequoiadendron giganteum|32|60-80cm C10
+93|Moerascypres|Taxodium distichum|18|100-125cm kluit
+94|Venijnboom|Taxus baccata|6,5|50-60cm kluit
+95|Venijnboom|Taxus baccata|8|60-80cm kluit
+96|Venijnboom|Taxus baccata|11|80-100cm kluit
+97|Venijnboom|Taxus baccata|15|100-125cm kluit
+98|Venijnboom|Taxus baccata|19|125-150cm kluit
+99|Zuiltaxus|Taxus b. 'David'|7|40-60cm kluit
+100|Zuiltaxus|Taxus b. 'David'|14|60-80cm kluit
+101|Zuiltaxus|Taxus b. 'David'|21|100-120cm kluit
+102|Zuiltaxus|Taxus b. 'David'|24|120-140cm kluit
+103|Venijnboom|Taxus b. 'Fastigiata Robusta'|6,5|40-50cm kluit
+104|Venijnboom|Taxus b. 'Fastigiata Robusta'|12|60-80cm kluit
+105|Venijnboom|Taxus b. 'Fastigiata Robusta'|15|80-100cm kluit
+106|Venijnboom|Taxus b. 'Fastigiata Robusta'|19|100-120cm kluit
+107|Venijnboom|Taxus b. 'Fastigiata Robusta'|22|120-140cm kluit
+108|Venijnboom|Taxus b. 'Fastigiata Robusta'|25|140-160cm kluit
+109|Venijnboom|Taxus b. 'Repandens'|9,5|25-30cm C3
+110||Taxus b. 'Summergold'|9,5|25-30cm C3
+111|Venijnboom|Taxus media 'Hicksii'|6,5|50-60cm kluit
+112|Venijnboom|Taxus media 'Hicksii'|8|60-80cm kluit
+113|Venijnboom|Taxus media 'Hicksii'|11|80-100cm kluit
+114|Venijnboom|Taxus media 'Hicksii'|15|100-125cm kluit
+115|Venijnboom.|Taxus media 'Hillii'|6|40-50cm kluit
+116|Venijnboom.|Taxus media 'Hillii'|7|50-60cm kluit
+117|Venijnboom.|Taxus media 'Hillii'|9|60-80cm kluit
+118|Westerse levensboom|Thuja occ. 'Brabant'|8|80-100cm kluit
+119|Westerse levensboom|Thuja occ. 'Brabant'|10|100-125cm kluit
+120|Westerse levensboom|Thuja occ. 'Brabant'|13|125-150cm kluit
+121|Westerse levensboom|Thuja occ. 'Brabant'|17|150-175cm kluit
+122|Westerse levensboom|Thuja occ. 'Brabant'|22|175-200cm kluit
+123|Westerse levensboom|Thuja occ. 'Brabant'|28|200-225cm kluit
+124|Bol thuja|Thuja occ. 'Golden Globe'|9,5|25-30cm C3
+125||Thuja occ. 'Mirjam'|11|25-30cm C3
+126|Wsterse levensboom|Thuja occ. 'Rheingold'|8,5|25-30cm C3
+127|Westerse levensboom.|Thuja occ. 'Smaragd'|7|60-80cm kluit
+128|Westerse levensboom.|Thuja occ. 'Smaragd'|9|80-100cm kluit
+129|Westerse levensboom.|Thuja occ. 'Smaragd'|12|100-120cm kluit
+130|Westerse levensboom.|Thuja occ. 'Smaragd'|14|120-140cm kluit
+131|Westerse levensboom.|Thuja occ. 'Smaragd'|18|140-160cm kluit
+132|Levensboom|Thuja occ. 'Yellow Ribbon'|7|60-80cm kluit
+133||Platycladus orient. 'Aurea Nana'|9,5|25-30cm C3
+134||Thujopsis dolabrata|9,5|30-40cm C3
+135||Thujopsis dolabrata 'Nana'|9,5|25-30cm C3
+136|Hemlockspar|Tsuga canadensis|11|60-80cm kluit
+137|Hemlockspar|Tsuga canadensis|16|80-100cm kluit
+138||Tsuga can. 'Jeddeloh'|11|25-30cm C3
+139|Kiwibes|Actinidia arguta 'Issai'|12,5|50-60cm C2
+140|Kiwi (zelfbestuivend)|Actinidia deliciosa 'Jenny'|9|50-60cm C2
+141|Hazelnoot|Corylus a. 'Cosford'|14|Struik
+142|Hazelnoot|Corylus a. 'Halle'sche Riesen'|14|Struik
+143|Hazelnoot|Corylus a. 'Webb's Prize Cob'|14|Struik
+144|Kweepeer (appelvorm)|Cydonia oblonga 'Leskovacka'|15|Struik
+145|Kweepeer (peervorm)|Cydonia oblonga 'Vranja'|15|Struik
+146|Kweepeer (peervorm)|Cydonia oblonga 'Vranja'|22|Halfstam
+147|Kweepeer (peervorm)|Cydonia oblonga 'Vranja'|34|Hoogstam
+148|Vijg|Ficus carica 'Bornholms Diamant'|12|50-60cm C5
+149|Vijg|Ficus carica 'Brown Turkey'|12|50-60cm C2
+150|Walnoot|Juglans regia 'Bella Maria'|62|150-175cm C12
+151|Walnoot|Juglans regia 'Broadview'|62|150-175cm C12
+152|Walnoot|Juglans regia 'Buccaneer'|62|150-175cm C12
+153|Honingbes|Lonicera caerulea var. kamtschatica|8,5|50-60cm C2
+154|Gojibes (Boksdoorn)|Lycium chinense|7,5|40-50cm C3
+155|Mispel|Mespilus germanica 'Westerveld'|14|Struik
+156|Mispel|Mespilus germanica 'Westerveld'|22|Halfstam
+157|Mispel|Mespilus germanica 'Westerveld'|29|Hoogstam
+158|Zwarte moerbei|Morus nigra|22|Struik
+159|Zwarte moerbei|Morus nigra|42|Halfstam
+160|Zwarte moerbei|Morus nigra|64|Hoogstam
+161|Abrikoos|Prunus armeniaca 'Bredase'|14|Struik
+162|Abrikoos pruim|Prunus dom. 'Aprimira'|28|Halfstam
+163|Pruim|Prunus d. 'Valor'|16|Halfstam
+164|Amandel|Prunus dulcis 'Robijn'|12|Struik
+165|Nectarine|Prunus p. nucip. 'Mme Blanchet'|12|Struik
+166|Perzik|Prunus p. 'Avalon Pride'|18|Struik
+167|Perzik|Prunus p. 'Avalon Pride'|22|Struik C 7,5
+168|Perzik|Prunus p. 'Wassenberger'|12|Struik
+169|Nashipeer|Pyrus pyrifolia 'Niitaka'|15|Struik
+170|Zwarte bes|Ribes nigr. 'Titania'|6|50-60cm C2
+171|Zwarte bes|Ribes nigr. 'Titania'|3|50-60cm 3-4tak
+172|Witte Aalbes|Ribes rub. 'Witte Hollander'|6|50-60cm C2
+173|Witte bes|Ribes rub. 'Witte Parel'|6|50-60cm C2
+174|Witte bes|Ribes rub. 'Witte Parel'|3|50-60cm 3-4tak
+175|Rode bes|Ribes rub. 'Jonkheer van Tets'|6|50-60cm C2
+176|Rode bes|Ribes rub. 'Jonkheer van Tets'|3,5|50-60cm 3-4tak
+177|Kruisbes rood|Ribes u.-c. 'Hinnonmaki Rod'|3|40-50cm 3-4tak
+178|Kruisbes rood|Ribes u.-c. 'Hinnonmaki Rod'|6|50-60cm C2
+179|Kruisbes wit|Ribes u.-c. 'Invicta'|3|40-50cm 3-4tak
+180|Kruisbes wit|Ribes u.-c. 'Invicta'|6|50-60cm C2
+181|Kruisbes rood|Ribes u.-c. 'May Duke'|6|50-60cm C2
+182|Jostabes|Ribes 'Jostaberry'|6|50-60cm C2
+183|Doornloze braam|Rubus frut. 'Black Satin'|6|50-60cm C2
+184|Doornloze braam|Rubus frut. 'Chester Thornless'|6|50-60cm C2
+185|Gedoornde braam|Rubus frut. 'Himalaya'|6|50-60cm C2
+186|Doornloze braam|Rubus frut. 'Hull Thornless'|6|50-60cm C2
+187|Doornloze braam|Rubus frut. 'Navaho'|6|50-60cm C2
+188|Doornloze braam|Rubus frut. 'Thornfree'|6|50-60cm C2
+189|Doornloze braam|Rubus frut. 'Thornless Evergreen'|6|50-60cm C2
+190|Framboos herfst|Rubus idaeus 'Autumn Bliss'|2|40-50cm wg.
+191|Framboos herfst|Rubus idaeus 'Autumn Bliss'|6|50-60cm C2
+192|Gele herfstframboos|Rubus idaeus 'Fallgold'|6|50-60cm C2
+193|Herfstframboos|Rubus idaeus 'Héritage'|6|50-60cm C2
+194|Framboos Zomer|Rubus idaeus 'Malling Promise'|2|40-50cm wg.
+195|Framboos Zomer|Rubus idaeus 'Malling Promise'|6|50-60cm C2
+196|Zomerframboos|Rubus idaeus 'Ottawa'|6|50-60cm C2
+197|Japanse wijnbes|Rubus phoenicolasius|6|50-60cm C2
+198|Boysenberry|Rubus 'Boysen' BOYSENBERRY|6|50-60cm C2
+199|Loganberry|Rubus 'Loganberry'|6|50-60cm C2
+200|Tayberry|Rubus 'Tayberry'|6|50-60cm C2
+201|Doornloze Loganberry|Rubus 'Thornless Loganberry'|6|50-60cm C2
+202|Bosbes (Blauwebes)|Vaccinium cor. 'Ama'|8,5|40-50cm C3
+203|Blauwebes|Vaccinium cor. 'Bluecrop'|8|40-50cm C3
+204|Blauwe bes|Vaccinium cor. 'Brigitta Blue'|8,5|40-50cm C3
+205|Blauwebes|Vaccinium cor. 'Duke'|8,5|40-50cm C3
+206|Blauwebes|Vaccinium cor. 'Goldtraube 71'|8,5|40-50cm C3
+207|Blauwe bes|Vaccinium cor. 'Northland'|8|40-50cm C3
+208|Blauwe druif|Vitis 'Boskoop Glory'|7,5|60-80cm C2
+209|Witte druif|Vitis 'Vroege van der Laan'|8|60-80cm C2
+210|Abelia|Abelia grandiflora|6,5|30-40cm C3
+211|Abelia|Abelia xgran. 'Kaleidoscope'|5,5|20-25cm C2
+212|Slangenhuid-esdoorn|Acer conspicuum 'Red Flamingo'|20|40-50cm C7,5
+213|Japanse esdoorn|Acer japonicum 'Aconitifolium'|20|30-40cm C3
+214|Japanse esdoorn|Acer palmatum|12|80-100cm C4
+215|Japanse esdoorn|Acer pal. 'Atropurpureum'|12|50-60cm kluit
+216|Japanse esdoorn|Acer pal. 'Atropurpureum'|12|50-60cm C3
+217|Japanse esdoorn|Acer pal. 'Bloodgood'|22|60-80cm C5
+218|Japanse esdoorn|Acer pal. 'Dissectum'|15|30-40cm C3
+219|Japanse esdoorn|Acer pal. 'Garnet'|22|50-60cm C4
+220|Japanse esdoorn|Acer pal. 'Ornatum'|15|30-40cm C3
+221|Japanse Esdoorn|Acer pal. 'Shaina'|18|40-50cm C5
+222|Herfstpaardenkastanje|Aesculus parviflora|15|50-60cm C5
+223|Krent|Amelanchier laevis 'Ballerina'|13|60-80cm C5
+224|Krentenboompje|Amelanchier lamarckii|7,5|100-120cm kluit
+225|duivelswandelstok|Aralia elata|15|150-175 cm
+226|Appelbes|Aronia melanocarpa 'Hugin'|6,5|50-60cm C3
+227|Appelbes|Aronia prunifolia 'Viking'|6,5|50-60cm C3
+228|Broodboompje|Aucuba jap. 'Rozannie'|8|40-50cm C3
+229|Broodboompje|Aucuba jap. 'Variegata'|6|40-50cm C3
+230|Zuurbes|Berberis candidula|6|25-30cm kluit
+231|Zuurbes|Berberis frikartii 'Amstelveen'|6,5|30-40cm kluit
+232|Zuurbes|Berberis frikartii 'Telstar'|5,5|30-40cm kluit
+233|Zuurbes|Berberis julianae|6|40-50cm kluit
+234|Zuurbes|Berberis lol. 'Mystery Fire'|6,5|30-40cm C2
+235|Zuurbes|Berberis media 'Parkjuweel'|5,5|30-40cm C2
+236|Zuurbes|Berberis stenophylla|5|40-50cm kluit
+237|Vlinderstruik|Buddleja alternifolia|6,5|50-60cm C2
+238|Vlinderstruik|Buddleja dav. 'Black Knight'|5,5|40-50cm C3
+239|Vlinderstruik|Buddleja dav. 'Border Beauty'|4,5|40-50cm C3
+240|Vlinderstruik|Buddleja dav. 'Empire Blue'|4,5|40-50cm C3
+241|Vlinderstruik|Buddleja dav. 'Ile de France'|4,5|40-50cm C3
+242|Vlinderstruik|Buddleja dav. 'Nanho Blue'|5,5|40-50cm C3
+243|Vlinderstruik|Buddleja dav. 'Pink Delight'|5,5|40-50cm C3
+244|Vlinderstruik|Buddleja dav. 'Royal Red'|5,5|40-50cm C3
+245|Vlinderstruik|Buddleja dav. 'White Profusion'|5,5|40-50cm C3
+246|Vlinderstruik|Buddleja 'Blue Chip'|8,5|30-40cm C3
+247|Vlinderstruik|Buddleja 'Lilac Chip'|8,5|30-40cm C3
+248|Vlinderstruik|Buddleja 'Lochinch'|5,5|40-50cm C3
+249|Vlinderstruik|Buddleja 'White Chip' |8,5|30-40cm C3
+250|Palmboompje|Buxus sempervirens|1|15-20cm P9
+251|Palmboompje|Buxus sempervirens|1,2|20-25cm wg.
+252|Palmboompje|Buxus sempervirens|9|25-30cm bolvorm
+253|Palmboompje|Buxus sempervirens|12|30-40cm bolvorm
+254|Palmboompje|Buxus sempervirens|3,5|35-40cm kluit
+255|Palmboompje|Buxus sempervirens|4,5|40-50cm kluit
+256|Palmboompje|Buxus sempervirens|16|40-50cm bolvorm
+257|Palmboompje|Buxus sempervirens|12|40-50cm piramide
+258|Schoonbes|Callicarpa bodinieri 'Profusion'|13|60-80cm C3
+259|Schoonbes|Callicarpa bodinieri 'Profusion'|8,5|80-100cm kluit
+260|Struik-/zomerheide|Calluna vulgaris|1,5|lev. P12
+261|Specerijenstruik|Calycanthus floridus|8,5|50-60cm C3
+262|Camelia|Camellia japonica|12|30-40cm C2
+263|Camelia|Camellia japonica|19|50-60cm C3
+264|Caryopteris|Caryopteris xcland. 'Heavenly Blue'|3,5|40-50cm C1,5
+265|Caryopteris|Caryopteris xcland. 'Kew Blue'|3,5|40-50cm C1,5
+266|Amerikaanse sering|Ceanothus del. 'Gloire de Versaille|6|40-50cm C2
+267|Amerikaanse Sering|Ceanothus impressus 'Victoria'|5|30-40cm C2
+268|Amerikaanse sering|Ceanothus pallidus 'Marie Simon'|6|40-50cm C2
+269|Amerikaanse sering|Ceanothus thyrsiflorus repens|5,5|25-30cm C2
+270|Amerikaanse sering|Ceanothus 'Burkwoodii'|5,5|30-40cm C2
+271|Kogelbloem|Cephalanthus occidentalis|5,5|30-40cm C2
+272|Katsuraboom|Cercidiphyllum japonicum|11|80-100cm kluit
+273|Katsuraboom|Cercidiphyllum japonicum|14|100-125cm kluit
+274|Katsuraboom|Cercidiphyllum japonicum|18|125-150cm kluit
+275|Katsuraboom|Cercidiphyllum japonicum|22|150-175cm kluit
+276|Katsuraboom|Cercidiphyllum japonicum|27|175-200cm kluit
+277|Katsuraboom|Cercidiphyllum japonicum|32|200-225cm kluit
+278|Judasboom|Cercis canadensis 'Forest Pansy'|35|80-100cm kluit
+279|Japanse sierkwee|Chaenomeles jap. 'Sargentii'|4|30-40cm C2
+280|Japanse sierkwee|Chaenomeles sup. 'Crimson and Gold'|4,5|30-40cm C2
+281|Japanse sierkwee|Chaenomeles sup. 'Jet Trail'|4,5|30-40cm C2
+282|Japanse sierkwee|Chaenomeles sup. 'Nicoline'|4,5|30-40cm C2
+283|Purperen brem|Chamaecytisus purp. 'Atropurpureus'|4|30-40cm C2
+284|Winterzoet of Meloenboompje|Chimonanthus praecox|9,5|40-50cm C3
+285|Sneeuwvlokkenboom|Chionanthus virginicus|12|30-40cm C4
+286|Choisya|Choisya ternata|5,5|30-40cm C3
+287|Choisya|Invoeren als Lich|5,5|30-40cm C2
+288|Choisya|Choisya 'Aztec Pearl'|6|30-40cm C2
+289||Clerodendrum bungei|7,5|50-60cm kluit
+290|Schijnels|Clethra alnifolia|4,5|50-60cm C2
+291|Rose Schijjnels|Clethra alnifolia 'Pink Spire'|6|60-80cm kluit
+292|Witte Kornoelje|Cornus alba 'Elegantissima'|5,5|60-80cm C3
+293||Cornus alba 'Kesselringii'|5,5|60-80cm C3
+294|Witte Kornoelje|Cornus alba 'Sibirica'|5,5|60-80cm C3
+295|Kornoelje|Cornus alba 'Spaethii'|5,5|60-80cm C3
+296|Kornoelje|Cornus alternifolia|12|60-80cm kluit
+297|kornoelje|Cornus canadensis|3,5|lev. P9
+298|Kornoelje (reuzen kornoelje)|Cornus controversa|12|60-80cm kluit
+299|Kornoelje|Cornus controversa 'Variegata'|22|80-100cm kluit
+300|Amerikaanse Kornoelje|Cornus florida|12|80-100cm kluit
+301|Amerikaanse Kornoelje|Cornus florida 'Cherokee Chief'|24|60-80cm C7,5
+302|Japanse Kornoelje|Cornus kousa|12|80-100cm kluit
+303|Japanse Kornoelje|Cornus kousa chinensis|14|80-100cm kluit
+304|Japanse Kornoelje|Cornus kousa chinensis|19,5|100-125cm kluit
+305|Chinese kornoelje|Cornus kousa 'Milky Way'|24|80-100cm C7,5
+306|Chinese bloemkornoelje|Cornus kousa 'Samzam' SAMARITAN|24|80-100cm C7,5
+307|Chinese kornoelje|Cornus kousa 'Satomi'|22|60-80cm kluit
+308|Gele Kornoelje|Cornus mas|12|100-125cm kluit
+309|Amerikaanse kornoelje|Cornus nuttallii|25|60-80cm C12
+310|Kornoelje|Cornus sanguinea 'Winter Beauty'|5,5|40-50cm C3
+311|Kornoelje|Cornus sericea 'Kelseyi'|2,2|25-30cm C1,5
+312|Kornoelje|Cornus sericea 'Flaviramea'|6,5|60-80cm C3
+313|Bloemkornoelje|Cornus 'Rutlan' RUTH ELLEN|29|80-100cm C12
+314|Schijnhazelaar|Corylopsis pauciflora|12|30-40cm C3
+315|Schijnhazelaar|Corylopsis spicata|15|50-60cm kluit
+316|Kronkelhazelaar|Corylus avellana 'Contorta'|12|80-100cm kluit
+317|Kronkelhazelaar roodbladig|Corylus avellana 'Red Majestic'|11|70-80cm C5
+318|Rode hazelaar|Corylus maxima 'Purpurea'|12|60-80cm C5
+319|Pruikenboom|Cotinus coggygria|8|60-80cm kluit
+320|Pruikenboom|Cotinus cog. 'Royal Purple'|9|80-100cm kluit
+321|Pruikenboom|Cotinus cog. 'Royal Purple'|14|80cm stam
+322|Pruikenboom|Cotinus cog. 'Young Lady'|7|60-80cm kluit
+323|Pruikenboom|Cotinus cog. 'Young Lady'|11|100-125cm kluit
+324|Dwergmispel|Cotoneaster dammeri 'Major'|1,7|30-40cm C1,5
+325|Dwergmispel|Cotoneaster dammeri 'Winter Jewel'|14|80cm stam
+326||Forsythia interm. 'Minigold'|5|25-30cm C3
+327|Dwergmispel|Cotoneaster horizontalis|4|40-50cm C2
+328||Cotoneaster microphyllus|2|25-30cm C1,5
+329||Cotoneaster pr. 'Queen of Carpets'|2|20-30cm C1,5
+330|dwergmispel|Cotoneaster radicans 'Eichholz'|1,7|20-30cm C1,5
+331|Dwergmispel|Cotoneaster xsuecicus 'Coral Beauty'|1,7|30-40cm C1,5
+332|Dwergmispel|Cotoneaster xsuecicus 'Coral Beauty'|16|80cm stam
+333|Dwergmispel|Cotoneaster suec. 'Juliette'|16|80cm stam
+334|Rode Meidoorn|Crataegus xmedia 'Paul's Scarlet'|18|Struik
+335|Brem|Cytisus nigricans 'Cyni'|4|30-40cm C2
+336|Brem|Cytisus praecox 'Allgold'|5|40-50cm C4
+337|Brem|Cytisus 'Boskoop Ruby'|5|40-50cm C4
+338|Peperboompje|Daphne mezereum|14|30-40cm kluit
+339|Vaantjesboom of Zakdoekenboom|Davidia involucrata|22|80-100cm C4
+340|Augurkenstruik|Decaisnea fargesii|12|80-100cm kluit
+341|Augurkenstruik|Decaisnea fargesii|22|125-150cm kluit
+342|Bruidsbloem|Deutzia crenata 'Pride of Rochester'|2,5|60-80cm C1,5
+343|Bruidsbloem|Deutzia elegantissima 'Rosealind'|2,5|40-50cm C1,5
+344|Bruidsbloem|Deutzia gracilis|2,5|30-40cm C1,5
+345|Bruidsbloem|Deutzia gracilis|4,5|40-50cm C3
+346|Bruidsbloem|Deutzia hybrida 'Mont Rose'|5,5|40-50cm C3
+347|Bruidsbloem|Deutzia lemoinei|6,5|40-50cm C3
+348||Deutzia magnifica|5,5|50-60cm C3
+349||Deutzia purp. 'Kalmiiflora'|3,2|40-50cm C1,5
+350|Bruidsbloem|Deutzia rosea|2,5|40-50cm C1,5
+351|Bruidsbloem|Deutzia scabra 'Plena'|2,5|60-80cm C1,5
+352||Diervilla sessilifolia 'Butterfly'|3,5|30-40cm C1,5
+353||Diervilla splendens|2,5|40-50cm C1,5
+354|Olijfwilg|Elaeagnus ebbingei|7|60-80cm kluit
+355|Olijfwilg|Elaeagnus ebbingei|9,5|60-80cm C4
+356|Olijfwilg|Elaeagnus ebbingei|11|100-125cm kluit
+357|Olijfwilg|Elaeagnus ebb. 'Gilt Edge'|7,5|40-50cm C2
+358|Olijfwilg|Elaeagnus ebb. 'Limelight'|9|50-60cm C4
+359|Olijfwilg|Elaeagnus pungens 'Maculata'|8,5|40-50cm C3
+360|Olijfwilg|Elaeagnus pungens 'Maculata'|20|80cm stam
+361|Enkianthus|Enkianthus campanulatus|9|40-50cm C2
+362||Erica carnea|1,5|lev. P9
+363||Erica darleyensis|1,5|lev. P9
+364|Winterheide (dopheide)|Erica darl. 'Darley Dale'|1,5|P12
+365|Winterheide (dopheide)|Erica darl. 'Kramer's Rote'|2,5|P12
+366|Winterheide (dopheide)|Erica darl. 'Silberschmelze'|1,5|P12
+367|Escallonia|Escallonia 'Donard Seedling'|3,5|30-40cm C1,5
+368|Escallonia|Escallonia 'Red Dream'|7|20-25cm C2
+369|Cider gomboom|Eucalyptus gunnii|6|60-80cm C2
+370|Kardinaalshoed|Euonymus alatus|9|50-60cm kluit
+371|Kardinaalshoed|Euonymus alatus|8,5|50-60cm C3
+372|Kardinaalshoed|Euonymus alatus 'Compactus'|9|30-40cm C2
+373||Euonymus americanus|17,5|80-100cm piramide
+374|Kardinaalshoed|Euonymus europaeus 'Red Cascade'|8|60-80cm kluit
+375|Japanse kardinaalsmuts|Euonymus fort. 'Emerald 'n Gold'|2,5|25-30cm C1,5
+376|Japanse kardinaalsmuts|Euonymus fort. 'Emerald Gaiety'|2,5|25-30cm C1,5
+377|Japanse kardinaalsmuts|Euonymus fort. 'Emerald Gaiety'|16|80cm stam
+378|Japanse kardinaalsmuts|Euonymus fort. 'Harlequin'|2,5|25-30cm C1,5
+379||Euonymus fort. 'Sunspot'|2,5|25-30cm C1,5
+380|Kardinaalshoed|Euonymus phellomanus|12|50-60cm kluit
+381|kardinaalshoed|Euonymus planipes|9,5|60-80cm kluit
+382|Parelstruik|Exochorda macrantha 'The Bride'|6,5|40-50cm C3
+383|Chinees klokje|Forsythia xint. 'Lynwood'|5,5|50-60cm C3
+384|Chinees klokje|Forsythia xint. 'Spectabilis'|5,5|60-80cm C3
+385||Forsythia o. 'Tetragold'|4|30-40cm C1,5
+386|Lampepoetsterstruik / Flesseborstelplant|Fothergilla major|16|30-40cm C3
+387||Fuchsia magellanica gracilis|2,5|P9
+388|Bergthee|Gaultheria procumbens|2,5|P9
+389|Bergthee|Gaultheria shallon|4|15-20cm C1,5
+390||Genista lydia|3,5|30-40cm C1,5
+391|Toverhazelaar|Hamamelis int. 'Aphrodite'|24|60-80cm kluit
+392|Toverhazelaar|Hamamelis int. 'Arnold Promise'|24|60-80cm kluit
+393|Toverhazelaar|Hamamelis int. 'Diane'|24|60-80cm kluit
+394|Toverhazelaar|Hamamelis int. 'Jelena'|24|60-80cm kluit
+395|Toverhazelaar|Hamamelis int. 'Pallida'|24|60-80cm kluit
+396|Toverhazelaar|Hamamelis vernalis 'Amethyst'|24|80-100cm kluit
+397||Hebe diversen|2,5|leverbaar
+398||Hebe 'Inspiration'|6|25-30cm C3
+399|Kaukasische klimop|Hedera colchica 'Fall Favourite'|5,5|25-30cm C2
+400|Struik klimop|Hedera hel. 'Arborescens'|6|30-40cm C2
+401||Hedera hel. 'Arbori Compact'|6,5|25-30cm C2
+402|Klimop|Hedera hel. 'Goldchild'|2,5|20-25cm C1,5
+403||Hedera hel. 'Natasja'|2,5|20-30cm C2
+404|Klimop|Hedera hibernica|1,25|lev. P9
+405|Klimop|Hedera hibernica|2|lev. C1,5
+406|Altheastruik|Hibiscus syr. 'Hamabo'|9|30-40cm C2
+407|Altheastruik|Hibiscus syr. 'Oiseau Bleu'|9|30-40cm C2
+408|Atheastruik|Hibiscus syr. 'Red Heart'|9|30-40cm C2
+409||Hibiscus syr. 'William R. Smith'|9|30-40cm C2
+410|Altheastruik|Hibiscus syr. 'Woodbridge'|9|30-40cm C2
+411|Pluimsprea|Holodiscus discolor|8|40-50cm C3
+412|Bolhortensia|Hydrangea arb. 'Annabelle'|4,5|30-40cm C2
+413|Bolhortensia|Hydrangea arb. 'Annabelle'|7,5|50-60cm C5
+414|Bolhortensia|Hydrangea arb. 'Annabelle'|8,5|60-80cm C7,5
+415|Hortensia|Hydrangea aspera 'Macrophylla'|8|60-80cm C3
+416|Hortensia (Teller Blue)|Hydrangea m. 'Blaumeise'|4,5|30-40cm C2
+417|Hortensia|Hydrangea m. 'Bouquet Rose'|4,5|30-40cm C2
+418|Hortensia|Hydrangea m. 'Freudenstein'|4,5|30-40cm C2
+419|Hortensia|Hydrangea m. 'Hamburg'|4,5|30-40cm C2
+420|Hortensia|Hydrangea m. 'Königstein'|4,5|30-40cm C2
+421|Hortensia|Hydrangea m. 'Leuchtfeuer'|4,5|30-40cm C2
+422|Hortensia (Teller White)|Hydrangea m. 'Libelle'|4,5|30-40cm C2
+423|Hortensia|Hydrangea m. 'Maréchal Foch'|4,5|30-40cm C2
+424|Hortensia (bolvorm)|Hydrangea m. 'Mariesii Perfecta'|4,5|30-40cm C2
+425|Hortensia (bolvorm)|Hydrangea m. 'Masja'|4,5|30-40cm C2
+426|Hortensia (bol)|Hydrangea m. 'Merv. Sanguinea'|4,5|30-40cm C2
+427|Hortensia (bolvorm)|Hydrangea m. 'Mme E. Mouillére'|4,5|30-40cm C2
+428|Hortensia|Hydrangea m. 'Nikko Blue'|4,5|30-40cm C2
+429|Hortensia (bolvorm)|Hydrangea m. 'Oregon Pride'|4,5|30-40cm C2
+430|Hortensia|Hydrangea m. 'Schöne Bautznerin'|4,5|30-40cm C2
+431|Hortensia|Hydrangea m. 'Schöne Bautznerin'|7,5|40-50cm C5
+432||Hydrangea m. 'Superbowl'|4,5|30-40cm C2
+433|Hortensia (bolvorm)|Hydrangea m. 'Tovelit'|4,5|25-30cm C2
+434|Pluimhortensia|Hydrangea pan. 'Grandiflora'|5|40-50cm C3
+435|Pluimhortensia|Hydrangea pan. 'Grandiflora'|26|100cm stam
+436|Pluimhortensia|Hydrangea pan. 'Kyushu'|5|40-50cm C3
+437|Pluimhortensia|Hydrangea pan. 'Limelight'|6,5|40-50cm C2
+438|Pluimhortensia|Hydrangea pan. 'Limelight'|9,5|50-60cm C5
+439|Pluimhortensia|Hydrangea pan. 'Limelight'|8,5|60-80cm C7,5
+440|Pluimhortensia|Hydrangea pan. 'Limelight'|29|100cm stam
+441|Pluimhortensia|Hydrangea pan. 'Little Lime'|7,5|30-40cm C2
+442|Pluimhortensia|Hydrangea pan. 'Phantom'|6,5|40-50cm C2
+443|Eikenbladhortensia|Hydrangea quercifolia|8,5|30-40cm C3
+444|Hortensia (lacecap)|Hydrangea serr. 'Bluebird'|4,5|30-40cm C2
+445|Hertshooi|Hypericum androsaemum|2|30-40cm C1,5
+446|Hertshooi|Hypericum calycinum|1,5|lev. P9
+447|Hertshooi|Hypericum inod. 'Excellent Flair'|2,5|30-40cm C1,5
+448|Hertshooi|Hypericum inod. 'Rheingold'|2,5|20-25cm C1,5
+449|Hertshooi|Hypericum kalmianum|3|30-40cm C1,5
+450|Hertshooi|Hypericum kalmianum 'Gemo'|3|30-40cm C1,5
+451|Hertshooi|Hypericum moserianum|1,7|30-40cm C1,5
+452|Hertshooi|Hypericum 'Hidcote'|1,7|30-40cm C1,5
+453|Hulst|Ilex aquifolium|4,5|50-60cm kluit
+454|Hulst|Ilex aquifolium|6,5|60-80cm kluit
+455|Hulst|Ilex aquifolium|12|80-100cm kluit
+456|Hulst|Ilex aquifolium|12|100-125cm kluit
+457|Hulst|Ilex aquifolium|16|125-150cm kluit
+458|Hulst|Ilex aquipernyi 'Dragon Lady'|10|80-100cm kluit
+459|Hulst|Ilex aquipernyi 'Dragon Lady'|18|140-160cm kluit
+460|Hulst|Ilex aq. 'Alaska'|9|60-80cm kluit
+461|Hulst|Ilex aq. 'Alaska'|12|80-100cm kluit
+462|Hulst|Ilex aq. 'Alaska'|16|100-125cm kluit
+463|Hulst|Ilex aq. 'Alaska'|24|150-175cm kluit
+464|Hulst|Ilex aq. 'Alaska'|32|175-200cm kluit
+465|Hulst|Ilex aq. 'Argentea Marginata'|9|60-80cm kluit
+466|Hulst|Ilex aq. 'Argentea Marginata'|12|80-100cm kluit
+467|Hulst|Ilex aq. 'Bacciflava'|16,5|80-100cm kluit
+468|Hulst|Ilex aq. 'Ferox Argentea'|6,5|40-50cm C3
+469|Hulst|Ilex aq. 'J.C. van Tol'|7|50-60cm kluit
+470|Hulst|Ilex aq. 'J.C. van Tol'|12|60-80cm kluit
+471|Hulst|Ilex aq. 'J.C. van Tol'|16|80-100cm kluit
+472|Hulst|Ilex aq. 'J.C. van Tol'|20|100-125cm kluit
+473|Hulst|Ilex aq. 'J.C. van Tol'|32|150-175cm kluit
+474|Hulst|Ilex aq. 'J.C. van Tol'|44|175-200cm kluit
+475|Bonte hulst|Ilex aq. 'Madame Briot'|11|60-80cm kluit
+476|Bonte Hulst|Ilex aq. 'Rubricaulis Aurea'|12|80-100cm kluit
+477|Japanse hulst|Ilex crenata 'Convexa'|5|30-40cm kluit
+478|Japanse hulst|Ilex crenata 'Golden Gem'|5,5|25-30cm C2
+479| Japanse Hulst|Ilex crenata 'Green Hedge'|6,5|30-40cm kluit
+480|Blauwe hulst mannelijk|Ilex xmeserveae 'Blue Prince'|5,5|50-60cm kluit
+481|Blauwe hulst mannelijk|Ilex xmeserveae 'Blue Prince'|7,5|60-80cm kluit
+482|Blauwe hulst mannelijk|Ilex xmeserveae 'Blue Prince'|11|80-100cm kluit
+483|Blauwe hulst mannelijk|Ilex xmeserveae 'Blue Prince'|15|100-125cm kluit
+484|Blauwe hulst mannelijk|Ilex xmeserveae 'Blue Prince'|19|125-150cm kluit
+485|Blauwe hulst mannelijk|Ilex xmeserveae 'Blue Prince'|24|150-175cm kluit
+486|Blauwe hulst mannelijk|Ilex xmeserveae 'Blue Prince'|34|175-200cm kluit
+487|Blauwe hulst|Ilex xmeserveae 'Blue Princess'|7|40-50cm kluit
+488|Hulst|Ilex xmeserveae 'Heckenstar'|7,5|60-80cm kluit
+489|Hulst|Ilex xmeserveae 'Heckenstar'|11|80-100cm kluit
+490|Hulst|Ilex xmeserveae 'Heckenstar'|15|100-125cm kluit
+491|Hulst|Ilex xmeserveae 'Heckenstar'|19|125-150cm kluit
+492|Hulst|Ilex xmeserveae 'Heckenstar'|24|150-175cm kluit
+493|Indigostruik|Indigofera heterantha|5,5|40-50cm C3
+494||Itea virginica|3,5|30-40cm C2
+495||Itea virginica 'Henry's Garnet'|4,5|30-40cm C2
+496||Itea virginica 'Sprich' LITTLE HENRY|5|30-40cm C2
+497|Lepelboom|Kalmia angustifolia 'Rubra'|10|30-40cm kluit
+498|Lepelboom|Kalmia latifolia|10|30-40cm kluit
+499|Ranonkelstruik|Kerria japonica 'Pleniflora'|4,5|60-80cm C3
+500|Koninginnestruik|Kolkwitzia amabilis|4,5|50-60cm C2
+501|Gouden regen|Laburnum wat. 'Vossii'|15|100-125cm w.
+502|Lavendel|Lavandula ang. 'Dwarf Blue'|1,7|P9
+503|Lavendel|Lavandula ang. 'Dwarf Blue'|1,5|lev. C1,5
+504|Lavendel|Lavandula ang. 'Hidcote'|1,8|P9
+505|Lavendel|Lavandula ang. 'Hidcote'|2,2|lev. C1,5
+506|Lavendel|Lavandula ang. 'Munstead'|1,8|P9
+507|Lavendel|Lavandula ang. 'Munstead'|1,8|lev. C1,5
+508||Lavandula stoechas pedunculata|2,5|lev. C1,5
+509||Lavandula st 'Anouk Dark Purple'|4,5|P12
+510|Leucothoe|Leucothoe axillaris 'Curly Red'|7,5|25-30cm C2
+511|Leucothoe|Leucothoe keiskei 'Burning Love'|7,5|20-25cm C2
+512|Leucothoe|Leucothoe keiskei 'Royal Ruby'|7|25-30cm C2
+513|Leucothoe|Leucothoe font. 'Rainbow'|5,5|25-30cm C2
+514|Leucothoe|Leucothoe font. 'Rainbow'|7|30-40cm C3
+515|Leucothoe|Leucothoe 'Zebonard' LOVITA|5,5|20-25cm C2
+516|Leucothoe|Leucothoe 'Zeblid'|5,5|20-25cm C2
+517|Fazantenbes|Leycesteria formosa|6,5|50-60cm C2
+518|Liguster|Ligustrum delavayanum|15|60cm stam
+519|Liguster|Ligustrum japonicum 'Rotundifolium'|8,5|20-30cm C2
+520|Liguster|Ligustrum japonicum 'Texanum'|6|25-30cm C3
+521|Bonte liguster|Ligustrum oval. 'Aureum'|4,5|40-50cm C2
+522|Ligustur|Ligustrum quihoui|6|30-40cm C2
+523|Winterkamperfoelie|Lonicera fragrantissima|7,5|50-60cm C3
+524|Kamperfoeli|Lonicera nit. 'Baggesen's Gold'|4|25-30cm C2
+525||Lonicera nit. 'Elegant'|1,7|25-30cm C1,5
+526|Chinese kamperfoelie|Lonicera nit. 'Maigrün'|1,8|30-40cm C1,5
+527|Chineese kamperfoelie|Lonicera pileata 'Moss Green'|1,7|30-40cm C1,5
+528||Lonicera tatar. 'Arnold Red'|2,5|60-80cm C1,5
+529|Beverboom|Magnolia liliiflora 'Nigra'|12,5|60-80cm kluit
+530|Beverboom|Magnolia loebneri 'Leonard Messel'|12|80-100cm kluit
+531|Beverboom|Magnolia loebneri 'Leonard Messel'|20|125-150cm kluit
+532|Beverboom|Magnolia loebneri 'Merrill'|12,5|80-100cm kluit
+533|Beverboom|Magnolia sieboldii|14|80-100cm kluit
+534|Beverboom (Valse tulpenboom)|Magnolia soulangeana|9|60-80cm kluit
+535|Beverboom (Valse tulpenboom)|Magnolia soulangeana|12|80-100cm kluit
+536|Beverboom (Valse tulpenboom)|Magnolia soulangeana|16|100-125cm kluit
+537||Magnolia stellata 'Royal Star'|12,5|50-60cm kluit
+538|Beverboom|Magnolia 'Susan'|10|60-80cm kluit
+539|Beverboom|Magnolia 'Susan'|13|80-100cm kluit
+540|Beverboom|Magnolia 'Yellow River'|24|80-100cm C10
+541||Mahonia aquifolium|5|30-40cm kluit
+542|Mahonia|Mahonia aq. 'Apollo'|6,5|25-30cm kluit
+543||Mahonia aq. 'Smaragd'|6|40-50cm kluit
+544|Mahoniestruik|Mahonia japonica|7,5|50-60cm kluit
+545|Mahoniestruik|Mahonia japonica 'Hivernant'|7|50-60cm kluit
+546|Mahoniestruik|Mahonia media 'Charity'|7|40-50cm C3
+547|Mahoniestruik|Mahonia media 'Winter Sun'|8,5|40-50cm C3
+548||Mahonia wagneri 'Pinnacle'|5|40-50cm kluit
+549|Sierappel|Malus 'Evereste'|22|Struik
+550|Sierappel|Malus 'Golden Hornet'|17|Struik
+551|Sierappel|Malus 'John Downie'|22|Struik
+552|Sierappel|Malus 'Red Sentinel'|22|Struik
+553|Sierappel|Malus 'Rudolph'|17|Struik
+554|Gagel|Myrica gale|4,5|30-40cm C1,5
+555|Trosspiraea|Neillia sinensis|4,5|50-60cm C2
+556|Schijnbeuk|Nothofagus antarctica|18|100-125cm kluit
+557|Schijnbeuk|Nothofagus antarctica|14|125-150cm kluit
+558|Olijf|Olea europaea|22|50-60cm C3
+559|Olijf|Olea europaea|26|80cm stam
+560|Schijnhulst|Osmanthus burkwoodii|7|30-40cm C2
+561|Schijnhulst|Osmanthus burkwoodii|14|80-100cm kluit
+562|Schijnhulst|Osmanthus burkwoodii|18|100-125cm kluit
+563|Schijnhulst|Osmanthus heter. 'Goshiki'|6,5|25-30cm C2
+564||Osmanthus heter. 'Tricolor'|5|25-30cm C2
+565||Osmanthus heter. 'Variegatus'|5|30-40cm C2
+566|Pachysandra|Pachysandra terminalis|1,2|P9
+567|Pachysandra|Pachysandra term. 'Green Carpet'|1,2|P9
+568|Boompioen|Paeonia suffruticosa|9|P11
+569|Perzisch ijzerhout|Parrotia persica|20|80-100cm kluit
+570|Vlamboom|Parrotia persica 'Vanessa'|24|100-125cm kluit
+571||Gaultheria mucronata|4,5|lev. man
+572||Gaultheria mucronata|5|lev met bes
+573|Russische salie|Perovskia atripl. 'Blue Spire'|4,5|30-40cm C2
+574|Boerenjasmijn|Philadelphus coronarius|5,5|50-60cm C3
+575|Boerenjasmijn|Philadelphus 'Belle Etoile'|5,5|50-60cm C3
+576|Boerenjasmijn|Philadelphus 'Lemoinei'|5,5|50-60cm C3
+577|Boerenjasmijn|Philadelphus 'Manteau d'Hermine'|5,5|30-40cm C3
+578|Jasmijn|Philadelphus 'Mont Blanc'|5,5|40-50cm C3
+579|Boerenjasmijn|Philadelphus 'Snowbelle'|5,5|60-80cm C3
+580|Boerenjasmijn|Philadelphus 'Virginal'|5,5|60-80cm C3
+581|Glansmispel|Photinia xfraseri 'Camilvy'|6,5|50-60cm C3
+582|Glansmispel|Photinia xfraseri 'Little Red Robin'|6,5|25-30cm C2
+583|Glansmispel|Photinia xfraseri 'Red Robin'|6,5|50-60cm C3
+584|Glansmispel|Photinia xfraseri 'Red Robin'|8,5|60-80cm C4
+585|Glansmispel|Photinia xfraseri 'Red Robin'|6,5|80-100cm kluit
+586|Glansmispel|Photinia xfraseri 'Red Robin'|9|100-125cm kluit
+587|Glansmispel|Photinia xfraseri 'Red Robin'|22|80cm stam
+588|Glansmispel|Photinia xfraseri 'Red Robin'|26|120cm stam
+589|Blaasspirea|Physocarpus opulif. 'Dart's Gold'|3|40-50cm C2
+590|Blaasspiraea|Physocarpus opulif. 'Diabolo'|6|40-50cm C3
+591|Blaasspiraea|Physocarpus opulif. 'Diabolo'|8,5|80-100cm C5
+592|Blaasspirea|Physocarpus opulif. 'Red Baron'|7,5|40-50cm C3
+593|Rotsheide|Pieris japonica 'Bonfire'|5|25-30cm C2
+594|Rotsheide|Pieris jap. 'Cupido'|7,5|20-25cm C3
+595|Rotsheide|Pieris jap. 'Debutante'|7,5|25-30cm C3
+596|Rotsheide|Pieris jap. 'Little Heath Green'|5|25-30cm C2
+597|Rotsheide|Pieris jap. 'Little Heath'|5|20-25cm C2
+598|Rotsheide|Pieris jap. 'Mountain Fire'|6,5|20-30cm C2
+599|Rotsheide|Pieris jap. 'Prelude'|6|20-25cm C2
+600|Rotsheide|Pieris jap. 'Variegata'|5|30-40cm C2
+601|Rotsheide|Pieris 'Flaming Silver'|6|25-30cm C2
+602|Rotsheide|Pieris 'Forest Flame'|6,5|25-30cm C2
+603|Ganzerik*|Potentilla fr. 'Abbotswood'|1,7|20-30cm C1,5
+604|Ganzerik|Potentilla fr. 'Elizabeth'|1,7|20-30cm C1,5
+605|Ganzerik***|Potentilla fr. 'Goldfinger'|1,7|20-30cm C1,5
+606|Ganzerik|Potentilla fr. 'Goldstar'|1,7|20-30cm C1,5
+607|Ganzerik**|Potentilla fr. 'Hopleys Orange'|1,7|20-30cm C1,5
+608|Ganzerik***|Potentilla fr. 'Kobold'|1,7|20-30cm C1,5
+609|Ganzerik***|Potentilla fr. 'Limelight'|1,7|20-30cm C1,5
+610|Ganzerik***|Potentilla fr. 'Living Daylight'|1,7|20-30cm C1,5
+611|Ganzerik**|Potentilla fr. 'Maanelys'|1,8|20-30cm C1,5
+612|Ganzerik**|Potentilla fr. 'Medic. Wheel Mount.'|1,9|20-30cm C1,5
+613|Ganzerik|Potentilla fr. 'Pink Beauty'|1,7|20-30cm C1,5
+614|Ganzerik*|Potentilla fr. 'Red Ace'|1,7|20-30cm C1,5
+615|Ganzerik***|Potentilla fr. 'Sommerflor'|1,7|20-30cm C1,5
+616|Rode Kerspruim|Prunus cerasifera 'Nigra'|12|Struik
+617|dwerg sierkers|Prunus incisa 'Kojou-no-mai'|18|80cm stam
+618|Laurierkers|Prunus laur. 'Caucasica'|7|60-80cm kluit
+619|Laurierkers|Prunus laur. 'Caucasica'|8|80-100cm kluit
+620|Laurierkers|Prunus laur. 'Caucasica'|11|100-125cm kluit
+621|Laurierkers|Prunus laur. 'Caucasica'|14|125-150cm kluit
+622|Laurierkers|Prunus laur. 'Elly'|7,5|60-80cm kluit
+623|Laurierkers|Prunus laur. 'Elly'|9|80-100cm kluit
+624|Laurierkers|Prunus laur. 'Mariblon' GENOLIA|7,5|60-80cm kluit
+625|Laurierkers|Prunus laur. 'Mariblon' GENOLIA|9|80-100cm kluit
+626|Laurierkers|Prunus laur. 'Mariblon' GENOLIA|12|100-125cm kluit
+627|Laurierkers|Prunus laur. 'Herbergii'|9|80-100cm kluit
+628|Laurierkers|Prunus laur. 'Herbergii'|16|125-150cm kluit
+629|Laurierkers|Prunus laur. 'Marbled White'|5|40-50cm C2
+630|Laurierkers|Prunus laur. 'Novita'|7|60-80cm kluit
+631|Laurierkers|Prunus laur. 'Novita'|8|80-100cm kluit
+632|Laurierkers|Prunus laur. 'Novita'|11|100-125cm kluit
+633|Laurierkers|Prunus laur. 'Novita'|14|125-150cm kluit
+634|Laurierkers|Prunus laur. 'Otto Luyken'|7|30-40cm kluit
+635|Laurierkers|Prunus laur. 'Otto Luyken'|24|100cm stam
+636||Prunus laur. 'Reynvaanii'|5|80-100cm kluit
+637|Laurierkers|Prunus laur. 'Van Nes'|7|60-80cm kluit
+638|Laurierkers|Prunus laur. 'Van Nes'|9|80-100cm kluit
+639||Prunus laur. 'Zabeliana'|6|40-50cm kluit
+640|Portugese Laurier|Prunus lusitanica|7|50-60cm kluit
+641|Portugese Laurier|Prunus lusitanica|9|60-80cm kluit
+642|Portugese Laurier|Prunus lusitanica|11|80-100cm kluit
+643|Portugese laurier|Prunus lusitanica 'Angustifolia'|7|60-80cm kluit
+644|Portugese laurier|Prunus lusitanica 'Angustifolia'|11|80-100cm kluit
+645|Portugese laurier|Prunus lusitanica 'Angustifolia'|15|100-125cm kluit
+646|Portugese laurier|Prunus lusitanica 'Angustifolia'|19|125-150cm kluit
+647|Japanse abrikoos|Prunus mume 'Beni-chi-dori'|18|80cm stam
+648|Zuil sierkers|Prunus serrulata 'Amanogawa'|17|125-150 cm
+649|Sierkers|Prunus subh. 'Autumnalis Rosea'|11|Struik
+650|Amandelboompje|Prunus triloba|12|80cm stam
+651|Vuurdoorn|Pyracantha cocc. 'Red Column'|5|60-80cm C2
+652||Pyracantha cocc. 'Red Cushion'|3,2|30-40cm C1,5
+653||Pyracantha 'Firelight'|2,8|30-40cm C1,5
+654|Vuurdoorn|Pyracantha 'Golden Charmer'|5|60-80cm C2
+655||Pyracantha 'Orange Glow'|4,5|60-80cm C2
+656|Fluweelboom/Azijnboom|Rhus typhina|9,5|125-150cm kluit
+657|Flueelboom|Rhus typhina 'Dissecta'|9,5|80-100cm kluit
+658|Ribes (Sierbes)|Ribes sang. 'King Edward VII'|6,5|60-80cm C3
+659|Treurwilgje|Salix caprea 'Kilmarnock'|12|120cm stam
+660|Dwergwilg|Salix hastata 'Wehrhahnii'|2,8|20-25cm C1,5
+661|Bont wilgje|Salix integra 'Hakuro-nishiki'|7|60cm stam
+662|Bont wilgje|Salix integra 'Hakuro-nishiki'|8|80cm stam
+663|Bont wilgje|Salix integra 'Hakuro-nishiki'|11|120cm stam
+664|Bont wilgje|Salix integra 'Hakuro-nishiki'|22|180cm stam
+665|Vlier|Sambucus nigra 'Eva' BLACK LACE|8,5|30-40cm C3
+666|Vlier|Sambucus nigra 'Guincho Purple'|5|40-50cm C3
+667|Goud(tros)vlier|Sambucus racemosa 'Plumosa Aurea'|8|40-50cm C3
+668|Vleesbes|Sarcococca confusa|9,5|30-40cm C3
+669|Vleesbes|Sarcococca hookeriana humilis|9,5|30-40cm C3
+670|Skimmia|Skimmia confusa 'Kew Green'|7,5|30-40cm C2
+671|Skimmia|Skimmia jap. subsp. reevesiana|11|20-25cm C1,5
+672|Skimmia|Skimmia japonica 'Keessen'|8,5|40-50cm C5
+673|Skimmia|Skimmia japonica 'Marlot'|13|25-30cm C2
+674|Skimmia|Skimmia japonica 'Rubella'|8,5|30-40cm C3
+675||Sophora prostrata 'Little Baby'|6|40-50cm C3
+676|Lijsterbesspirea|Sorbaria sorbifolia|4,5|60-80cm C2
+677|Lijsterbes spirea|Sorbaria sorbifolia 'Sem'|9,5|40-50cm C3
+678|Spierstruik|Spiraea arguta|5|40-50cm C3
+679|Spierstruik|Spiraea betulifolia 'Tor'|2,1|30-40cm C1.0
+680|Spierstruik|Spiraea cinerea 'Grefsheim'|5,5|30-40cm C3
+681|Spierstruik|Spiraea jap. 'Albiflora'|1,7|20-30cm C1,5
+682|Spierstruik|Spiraea jap. 'Anthony Waterer'|1,8|25-30cm C1,5
+683|Spierstruik|Spiraea jap. 'Genpei'|1,7|20-30cm C1,5
+684|Spierstruik|Spiraea jap. 'Golden Princess'|1,7|20-30cm C1,5
+685|Spierstruik|Spiraea jap. 'Goldflame'|1,7|20-30cm C1,5
+686|Spierstruik|Spiraea jap. 'Little Princess'|1,7|20-30cm C1,5
+687||Spiraea nipp. 'June Bride'|2,4|30-40cm C1,5
+688|Spierstruik|Spiraea nipp. 'Snowmound'|5,5|50-60cm C3
+689|Spierstruik|Spiraea vanhouttei|5,5|50-60cm C3
+690|Staartaar|Stachyurus chinensis 'Celina'|14|60-70cm C4
+691|Pimpernoot|Staphylea colchica|14|80-100cm kluit
+692|Pimpernoot|Staphylea colchica|14|80-100cm C7,5
+693|Kransspirea|Stephanandra incisa 'Crispa'|1,7|30-40cm C1,5
+694|Schijncamellia|Stewartia pseudocamellia|28|80-100cm kluit
+695|Sering (Franse)|Syringa chinensis 'Saugeana'|8|50-60cm 3-5tak
+696|Sering|Syringa hyac. 'Maiden's Blush'|9|60-80cm 3-4tak
+697|Hongaarse sering|Syringa josikaea|9|80-100cm kluit
+698|Sering|Syringa komarowii subsp. reflexa|11|60-80cm kluit
+699|Dwergsering|Syringa meyeri 'Palibin'|8|30-40cm C3
+700|Dwergsering|Syringa meyeri 'Palibin'|8,5|40-50cm C5
+701|Dwergsering|Syringa meyeri 'Palibin'|17|80cm stam
+702|Dwergsering|Syringa meyeri 'Palibin'|26|120cm stam
+703|Sering|Syringa microphylla 'Superba'|9,5|60-80cm kluit
+704|Sering|Syringa patula 'Miss Kim'|9|30-40cm kluit
+705|Perzische sering|Syringa persica 'Laciniata'|7|40-50cm C3
+706|Sering|Syringa prest. 'James Macfarlane'|10|60-80cm 3-4tak
+707|Sering|Syringa v. 'And. an Ludwig Späth'|11|60-80cm 3-4tak
+708|Sering|Syringa v. 'Charles Joly'|12|60-80cm 3-4tak
+709||Syringa v. 'Decaisne'|10|60-80cm 3-4tak
+710|Sering|Syringa v. 'G.J. Baardse'|12|60-80cm 3-4tak
+711|Sering|Syringa v. 'Katherine Havemeyer'|9|60-80cm 3-4tak
+712|Sering|Syringa v. 'Michel Buchner'|9|60-80cm 3-4tak
+713|Sering|Syringa v. 'Miss Ellen Willmott'|9|60-80cm 3-4tak
+714|Sering|Syringa v. 'Mme Lemoine'|12|60-80cm 3-4tak
+715|Sering|Syringa v. 'Norrfjärden'|11|60-80cm 3-4tak
+716|Sering|Syringa v. 'Président Grévy'|9|60-80cm 3-4tak
+717|Sering|Syringa v. 'Ruhm von Horstenstein'|10|60-80cm 3-4tak
+718|Sering|Syringa v. 'Sensation'|10|60-80cm 3-4tak
+719|Tamarisk|Tamarix ramosissima 'Pink Cascade'|4|50-60cm C2
+720|Tamrisk|Tamarix tetrandra|4|50-60cm C2
+721|Palmboom|Trachycarpus fortunei|36|80-100cm C5
+722|Gaspeldoorn|Ulex europaeus|4|30-40cm C1,5
+723|Sneeuwbal|Viburnum bodn. 'Charles Lamont'|8|60-80cm C2
+724|Sneeuwbal|Viburnum bodn. 'Charles Lamont'|12|100-125cm kluit
+725|Sneeuwbal|Viburnum bodn. 'Charles Lamont'|15|125-150cm kluit
+726||Viburnum bodn. 'Dawn'|9|80-100cm kluit
+727|Sneewbal|Viburnum burkwoodii|11|60-80cm kluit
+728|Sneeuwbal|Viburnum carlcephalum|9|50-60cm kluit
+729|Sneewbal|Viburnum carlesii|9,5|50-60cm C4
+730|Sneeuwbal|Viburnum carlesii 'Aurora'|10|40-50cm kluit
+731|Sneeuwbal|Viburnum carlesii 'Juddii'|9|40-50cm kluit
+732|Sneeuwbal|Viburnum davidii|6,5|25-30cm C2
+733|Sneeuwbal|Viburnum farreri|9|80-100cm kluit
+734|Sneeuwbal|Viburnum nudum 'Pink Beauty'|12|60-80cm kluit
+735|Gelderse roos|Viburnum opulus 'Compactum'|9,5|30-40cm C3
+736|Sneeuwbal|Viburnum opulus 'Roseum'|8,5|80-100cm kluit
+737||Viburnum plic. tomentosum|8|40-50cm C3
+738|Japanse sneeuwbal|Viburnum plic. 'Grandiflorum'|14|40-50cm C4
+739|Sneeuwbal|Viburnum plic. 'Kilimandjaro'|14,5|50-60cm C3
+740|Sneewbal|Viburnum plic. 'Mariesii'|8|30-40cm C3
+741|Japanse sneeuwbal|Viburnum plic. 'Watanabe'|9|30-40cm C3
+742|Sneeuwbal|Viburnum rhytidophyllum|9|60-80cm kluit
+743|Sneeuwbal|Viburnum tinus|7,5|30-40cm C3
+744|Sneeuwbal|Viburnum tinus|24|60cm stam
+745|Sneeuwbal|Viburnum tinus 'Anvi' SPIRIT|7,5|30-40cm C3
+746|Sneeuwbal|Viburnum tinus 'Eve Price'|7,5|30-40cm C3
+747|Sneeuwbal|Viburnum tinus 'Gwenllian'|5|30-40cm C2
+748|Sneeuwbal|Viburnum 'Eskimo'|12|30-40cm C4
+749|Sneeuwbal|Viburnum 'Pragense'|8|30-40cm C2
+750|Grote Maagdenpalm|Vinca major|1,2|P9
+751|Grote maagdenpalm|Vinca major 'Variegata'|2,5|P9
+752|Maagdenpalm|Vinca minor|1,5|lev. P9
+753|Maagdenpalm|Vinca minor 'Gertrude Jekyll'|1,2|P9
+754|Weigelia|Weigela florida 'Alexandra'|4,5|30-40cm C3
+755|Weigelia|Weigela florida 'Foliis Purpureis'|5,5|40-50cm C3
+756|Weigela|Weigela florida 'Nana Variegata'|4,5|40-50cm C3
+757||Weigela 'Abel Carrière'|4,5|60-80cm C3
+758|Weigelia|Weigela 'Candida'|5,5|50-60cm C3
+759|Weigelia|Weigela 'Eva Rathke'|5,5|50-60cm C3
+760|Weigelia|Weigela 'Minuet'|4,5|40-50cm C3
+761|Weigelia|Weigela 'Red Prince'|5,5|40-50cm C3
+762|Stekelnootje|Acaena microphylla 'Kupferteppich'|1,8|P 9
+763|Acanthus|Acanthus mollis|2,5|P 9
+764|Duizendblad|Achillea mil. 'Red Beauty'|1,8|P 9
+765|Duizendblad|Achillea 'Taygetea'|2,5|P 9
+766|Monnikskap|Aconitum carm. 'Arendsii'|1,8|P 9
+767|Monnikskap|Aconitum napellus|2|P 9
+768|Monnikskap|Aconitum napellus 'Album'|2,8|P 9
+769|Zilverkaars|Actaea simplex 'Atropurpurea'|4,5|P 9
+770|Zilverkaars|Actaea simplex 'White Pearl'|4|P 9
+771|Dropplant|Agastache 'Black Adder'|2,5|P 9
+772|Dropplant|Agastache 'Blue Fortune'|2|P 9
+773|Zenegroen|Ajuga reptans|1,8|P 9
+774|Zenegroen|Ajuga reptans 'Atropurpurea'|1,8|P 9
+775|Zenegroen|Ajuga reptans 'Burgundy Glow'|2|P 9
+776|Vrouwenmantel|Alchemilla erythropoda|1,8|P 9
+777|Vrouwenmantel|Alchemilla mollis|1,5|P 9
+778|Siberische edelweis|Anaphalis triplinervis|2|P 9
+779|Herfst anemoon|Anemone hup. 'September Charm'|2,5|P 9
+780|Herfst anemoon|Anemone hyb. 'Honorine Jobert'|2,5|P 9
+781|Herfst anemoon|Anemone hyb. 'Königin Charlotte'|2,5|P 9
+782|Akelei|Aquilegia alpina|1,5|P 9
+783|Akelei|Aquilegia 'Nora Barlow'|1,8|P 9
+784|Rijstebrij - Randjesbloem|Arabis caucasica 'Snowcap'|1,2|P 9
+785|Engels gras|Armeria mar. 'Splendens'|1,5|P 9
+786|Aronskelk|Arum italicum|2,5|P 9
+787|Geitebaard|Aruncus aethusifolius|1,8|P 9
+788|Geitebaard|Aruncus dioicus|1,8|P 9
+789|Geitebaard|Aruncus dioicus 'Kneiffii'|3,5|P 9
+790|Mansoor|Asarum europaeum|2,5|P 9
+791|Herfst aster|Aster (D) 'Alice Haslam'|2|P 9
+792|Herfst aster|Aster (D) 'Prof. Anton Kippenberg'|2|P 9
+793|Pluimspiraea - Spiraea|Astilbe chinensis 'Pumila'|2|P 9
+794|Pluimspiraea - Spiraea|Astilbe (A) 'Fanal'|2|P 9
+795|Pluimspiraea - Spiraea|Astilbe (J) 'Deutschland'|2|P 9
+796|Pluimspiraea - Spiraea|Astilbe (J) 'Rheinland'|2|P 9
+797|Pluimspiraea - Spiraea|Astilbe (S) 'Sprite'|3|P 9
+798|Zeeuws knoopje|Astrantia major|2|P 9
+799|Zeeuws knoopje|Astrantia maj. 'Lars'|3,5|P 9
+800|Zeeuws knoopje|Astrantia maj. 'Ruby Wedding'|4,5|P 9
+801|Blauwkussen|Aubrieta 'Bressingham Red'|1,8|P 9
+802|Blauwkussen|Aubrieta 'Hamburger Stadtpark'|1,8|P 9
+803|Schoenlappersplant|Bergenia cordifolia|1,5|P 9
+804|Schoenlappersplant|Bergenia 'Silberlicht'|3|P 9
+805|Schoenlappersplant|Bergenia 'Wintermärchen'|3,5|P 9
+806|Kaukasische vergeet-mij-niet|Brunnera macrophylla|2|P 9
+807|Koeieoog|Buphthalmum salicifolium|1,2|P 9
+808|Dotterbloem|Caltha palustris|2|P 9
+809|Karpatenklokje|Campanula carp. 'Blaue Clips'|1,5|P 9
+810|Karpatenklokje|Campanula carp. 'Weisse Clips'|1,5|P 9
+811|Klokjesbloem|Campanula garganica|1,8|P 9
+812|Kluwenklokje|Campanula glomerata 'Acaulis'|1,5|P 9
+813|Klokjesbloem|Campanula lact. 'Prichard's Var.'|2,5|P 9
+814|Klokjesbloem|Campanula portenschlagiana|2|P 9
+815|Kruipklokje|Campanula poscharskyana|1,8|P 9
+816|Kruipklokje|Campanula posch. 'E.H. Frost'|2|P 9
+817|Kruipklokje|Campanula posch. 'Stella'|2|P 9
+818|Korenbloem|Centaurea montana|1,5|P 9
+819|Spoorbloem|Centranthus ruber 'Albus'|1,8|P 9
+820|Rode valeriaan - Spoorbloem|Centranthus ruber 'Coccineus'|1,8|P 9
+821|Hoornbloem|Cerastium tomentosum|1,5|P 9
+822|Roomse kamille - Loopkamille|Chamaemelum nobile 'Treneague'|2|P 9
+823|Schildpadbloem|Chelone obliqua|1,8|P 9
+824|Schildpadbloem|Chelone obliqua 'Alba'|1,8|P 9
+825|Lelietje der dalen|Convallaria majalis|2|P 9
+826|Meisjesogen|Coreopsis vert. 'Moonbeam'|2|P 9
+827|Meisjesogen|Coreopsis vert. 'Zagreb'|2|P 9
+828|Zeekool|Crambe cordifolia|4,5|P 11
+829|Schildblad|Darmera peltata|2,5|P 9
+830|Ridderspoor|Delphinium (B) 'Volkerfrieden'|3,5|P 9
+831|Ridderspoor|Delphinium (P) 'Astolat'|2|P 9
+832|Ridderspoor|Delphinium (P) 'Black Knight'|2|P 9
+833|Ridderspoor|Delphinium (P) 'Galahad'|2|P 9
+834|Steenanjer|Dianthus delt. 'Flashing Light'|1,5|P 9
+835|Anjer - Anjelier|Dianthus grat. 'Badenia'|2|P 9
+836|Diascia|Diascia 'Ruby Field'|2,2|P 9
+837|Gebroken hartjes|Dicentra formosa 'Luxuriant'|3|P 9
+838|Gebroken hartjes|Dicentra spectabilis|2|P 9
+839|Vuurwerkplant|Dictamnus albus|3|P 9
+840|Voorjaarszonnebloem|Doronicum orientale|1,5|P 9
+841|Rode zonnehoed|Echinacea purpurea|1,8|P 9
+842|Rode zonnehoed|Echinacea purp. 'Alba'|1,8|P 9
+843|Rode zonnehoed|Echinacea purp. 'Magnus'|1,8|P 9
+844|Kogeldistel|Echinops ritro 'Veitch's Blue'|2|P 9
+845|Elfenbloem|Epimedium rubrum|3|P 9
+846|Fijnstraal|Erigeron 'Dunkelste Aller'|2|P 9
+847|Kruisdistel|Eryngium planum 'Blauer Zwerg'|2,5|P 9
+848|Muurbloem|Erysimum 'Bowles Mauve'|2|P 9
+849|Koninginnenkruid/Leverkruid|Eupatorium mac. 'Atropurpureum'|2|P 9
+850|Amandelwolfsmelk|Euphorbia amygdaloides robbiae|3|P 9
+851|Amandelwolfsmelk|Euphorbia amygdaloides 'Purpurea'|2,5|P 9
+852|Wolfsmelk|Euphorbia characias wulfenii|3|P 9
+853|Cypreswolfsmelk|Euphorbia cyp. 'Clarice Howard'|2,5|P 9
+854|Wolfsmelk|Euphorbia griffithii 'Fireglow'|3|P 9
+855|Wolfsmelk|Euphorbia myrsinites|2|P 9
+856|Wolfsmelk|Euphorbia polychroma|1,8|P 9
+857|Moerasspirea|Filipendula rubra 'Venusta'|2,5|P 9
+858|Bosaardbei|Fragaria vesca|1,5|P 9
+859|Kokardebloem|Gaillardia 'Kobold'|1,8|P 9
+860|Lievevrouwenbedstro|Galium odoratum|2|P 9
+861|Prachtkaars|Gaura lindh. 'Siskiyou Pink'|3|P 9
+862|Prachtkaars|Gaura lindh. 'Whirling Butterflies'|3|P 9
+863|Ooievaarsbek|Geranium cantabrigiense 'Biokovo'|1,8|P 9
+864|Ooievaarsbek|Geranium cantabrigiense 'Cambridge'|1,8|P 9
+865|Ooievaarsbek|Geranium cin. 'Splendens'|2,5|P 9
+866|Ooievaarsbek|Geranium endressii|2|P 9
+867|Ooievaarsbek|Geranium endressii 'Wargrave Pink'|2|P 9
+868|Ooievaarsbek|Geranium macr. 'Ingwersen's Var.'|2|P 9
+869|Ooievaarsbek|Geranium macr. 'Spessart'|2|P 9
+870|Ooievaarsbek|Geranium xmagnificum|2,2|P 9
+871|Ooievaarsbek|Geranium prat. 'Mrs Kendall Clark'|2,5|P 9
+872|Ooievaarsbek|Geranium sanguineum striatum|2|P 9
+873|Ooievaarsbek|Geranium sang. 'Album'|1,8|P 9
+874|Ooievaarsbek|Geranium sang. 'Max Frei'|2|P 9
+875|Ooievaarsbek|Geranium 'Gerwat' ROZANNE|4,8|P 9
+876|Ooievaarsbek|Geranium 'Johnson's Blue'|2|P 9
+877|Ooievaarsbek|Geranium 'Philippe Vapelle'|3|P 9
+878|Nagelkruid|Geum coccineum 'Borisii'|2|P 9
+879|Gillenia|Gillenia trifoliata|2,5|P 9
+880|Mammoetblad|Gunnera manicata|9|lev. C3
+881|Gipskruid|Gypsophila pan. 'Bristol Fairy'|3,5|P 9
+882|Gipskruid|Gypsophila repens 'Rosea'|1,5|P 9
+883|Gipskruid|Gypsophila 'Rosenschleier'|2|P 9
+884|Zonnekruid|Helenium 'Moerheim Beauty'|2|P 9
+885|Zonneroosje|Helianthemum 'Ben Hope'|2|P 9
+886|Zonneroosje|Helianthemum 'Elfenbeinglanz'|2|P 9
+887|Zonneroosje|Helianthemum 'Sulphureum Plenum'|2|P 9
+888|Zonneroosje|Helianthemum 'Rhodanthe Carneum'|2|P 9
+889|Zonneroosje|Helianthemum 'Wisley Primrose'|2|P 9
+890|Nieskruid|Helleborus argutifolius|3|P 9
+891|Stinkend nieskruid|Helleborus foetidus 'Wester Flisk'|3,5|P 9
+892|Witte kerstroos|Helleborus niger|2,5|P 9
+893|Nieskruid / Kerstroos|Helleborus orientalis|3|P 9
+894|Daglelie|Hemerocallis 'Frans Hals'|2,5|P 9
+895|Daglelie|Hemerocallis 'Pink Damask'|2,5|P 9
+896|Daglelie|Hemerocallis 'Sammy Russell'|2,5|P 9
+897|Daglelie|Hemerocallis 'Stella de Oro'|2,5|P 9
+898|Purperklokje|Heuchera b. 'Pluie de Feu'|2|P 9
+899|Purperklokje|Heuchera mic. 'Palace Purple'|1,8|P 9
+900|Purperklokje|Heuchera 'Chocolate Ruffles'|4|P 9
+901|Purperklokje|Heuchera 'Petite Pearl Fairy'|3,5|P 9
+902|Purperklokje|Heuchera 'Pewter Moon'|4|P 9
+903|Purperklokje|Heuchera 'Stormy Seas'|3,5|P 9
+904|Hartlelie|Hosta clausa normalis|3|P 9
+905|Hartlelie|Hosta for. 'Albopicta'|2,5|P 9
+906|Hartlelie|Hosta for. 'Aureomarginata'|2,5|P 9
+907|Hartlelie|Hosta 'Francee'|3|P 9
+908|Hartlelie|Hosta 'Gold Standard'|3|P 9
+909|Hartlelie|Hosta for. 'Hyacinthina'|2,5|P 9
+910|Hartlelie|Hosta for. 'Patriot'|3,5|P 9
+911|Hartlelie|Hosta nigrescens 'Krossa Regal'|3,5|P 9
+912|Hartlelie|Hosta sieb. 'Elegans'|3,5|P 9
+913|Hartlelie|Hosta sieb. 'Frances Williams'|3,5|P 9
+914|Hartlelie|Hosta undulata 'Albomarginata'|2,5|P 9
+915|Hartlelie|Hosta 'Big Daddy'|3,5|P 9
+916|Hartlelie|Hosta 'Blue Cadet'|3|P 9
+917|Hartlelie|Hosta 'Golden Tiara'|3|P 9
+918|Hartlelie|Hosta 'Wide Brim'|3,5|P 9
+919|Moerasanemoon|Houttuynia cordata 'Chameleon'|2|P 9
+920|Scheefkelk|Iberis semp. 'Snowflake'|2|P 9
+921|Iris|Iris sib. 'Perry's Blue'|2,5|P 9
+922|Iris|Iris (G) 'Alcazar'|3,5|P 9
+923|Iris|Iris (G) 'Empress of India'|3,5|P 9
+924|Iris|Iris (G) 'Sangreal'|3,5|P 9
+925|Iris|Iris (P) 'Blue Denim'|3|P 9
+926|Japanse wasbloem|Kirengeshoma palmata|3|P 9
+927|Beemdkroon|Knautia macedonica|2,5|P 9
+928|Vuurpijl|Kniphofia uvaria|2|P 9
+929|Vuurpijl|Kniphofia 'Alcazar'|3|P 9
+930|Vuurpijl|Kniphofia 'Little Maid'|4|P 9
+931|Dovenetel|Lamium mac. 'Beacon Silver'|1,8|P 9
+932|Struikmalva|Lavatera 'Barnsley'|2,5|P 9
+933|Struikmalva|Lavatera 'Rosea'|2,5|P 9
+934|Edelweiss|Leontopodium alpinum|1,5|P 9
+935|Koperknoopje|Leptinella squalida|1,8|P 9
+936|Margriet|Leucanthemum (S) 'Silberprinzessche|1,5|P 9
+937|Lampenpoetser|Liatris spicata|1,8|P 9
+938|Lampenpoetser|Liatris spicata 'Alba'|1,8|P 9
+939|Lampenpoetser|Liatris spicata 'Kobold'|1,8|P 9
+940|Kruiskruid|Ligularia dentata 'Othello'|2,5|P 9
+941|Kruiskruid|Ligularia przewalskii|2,5|P 9
+942|Parelkruid/Steenzaad|Lithodora diffusa 'Heavenly Blue'|2,5|P 9
+943|Lupine|Lupinus 'Chandelier'|1,8|P 9
+944|Lupine|Lupinus 'My Castle'|1,8|P 9
+945|Lupine|Lupinus 'The Governor'|1,8|P 9
+946|Brandende liefde|Lychnis chalcedonica|1,5|P 9
+947|Wederik|Lysimachia clethroides|2|P 9
+948|Wederik|Lysimachia ephemerum|2|P 9
+949|Penningkruid|Lysimachia nummularia|2|P 9
+950|Puntwederik|Lysimachia punctata|1,5|P 9
+951|Kattenstaart|Lythrum sal. 'Robert'|2|P 9
+952|Pluimpapaver|Macleaya m. 'Kelway's Coral Plume'|2,5|P 9
+953|Kaasjeskruid|Malva moschata|1,8|P 9
+954|Kaasjeskruid|Malva moschata 'Alba'|1,8|P 9
+955|Kaasjeskruid|Malva sylvestris 'Primley Blue'|3|P 9
+956|Bergamotplant|Monarda 'Squaw'|2|P 9
+957|Kattekruid|Nepeta faassenii|1,8|P 9
+958|Kattekruid|Nepeta faassenii 'Senior'|2|P 9
+959|Kattekruid|Nepeta faassenii 'Six Hills Giant'|2|P 9
+960|Kattekruid|Nepeta faassenii 'Walker's Low'|2|P 9
+961|Teunisbloem|Oenothera fr. 'Fyrverkeri'|2|P 9
+962|Teunisbloem|Oenothera macrocarpa|2|P 9
+963|Amerikaans vergeetmijnietje|Omphalodes verna|2|P 9
+964|Slangenbaard|Ophiopogon planiscapus 'Niger'|4,5|Lev. C1,0
+965|Marjolein|Origanum laevigatum 'Herrenhausen'|2,5|P 9
+966|Pioenroos|Paeonia (LD) 'Duchesse de Nemours'|5,5|P 11
+967|Pioenroos|Paeonia (LD) 'Karl Rosenfield'|5,5|P 11
+968|Pioenroos|Paeonia (LD) 'Sarah Bernhardt'|5,5|P 11
+969|Oosterse klaproos|Papaver or. 'Helen Elizabeth'|3,5|P 9
+970|Oosterse klaproos|Papaver or. 'Rembrandt'|1,8|P 9
+971|Duizendknoop|Persicaria aff. 'Darjeeling Red'|2|P 9
+972|Duizendknoop|Persicaria aff. 'Superba'|2|P 9
+973|Duizendknoop|Persicaria amplex. 'Speciosa'|4|P 9
+974|Groot hoefblad|Petasites hybridus|2,2|P 9
+975|Brandkruid|Phlomis russeliana|2,5|P 9
+976|Vlambloem|Phlox (P) 'Amethyst'|2|P 9
+977|Vlambloem|Phlox (P) 'Bright Eyes'|2|P 9
+978|Vlambloem|Phlox (P) 'Starfire'|2|P 9
+979|Vlambloem|Phlox (P) 'White Admiral'|2|P 9
+980|Kruipphlox|Phlox (S) 'Candy Stripes'|2|P 9
+981|Kruipphlox|Phlox (S) 'Emerald Cushion Blue'|2|P 9
+982|Kruipphlox|Phlox (S) 'Maischnee'|2|P 9
+983|Kruipphlox|Phlox (S) 'Moerheimii'|2|P 9
+984|Kruipphlox|Phlox (S) 'Purple Beauty'|2|P 9
+985|Kruipphlox|Phlox (S) 'Scarlet Flame'|2|P 9
+986|Perzische Kruisjesplant|Phuopsis stylosa|1,8|P 9
+987|Scharnierplant|Physostegia virg. 'Summer Snow'|2|P 9
+988|Jacobsladder|Polemonium caeruleum|1,5|P 9
+989|Gewone Salomonszegel|Polygonatum multiflorum|2,5|P 9
+990|Ganzerik|Potentilla nep. 'Miss Willmott'|1,5|P 9
+991|Ganzerik|Potentilla 'Gibson's Scarlet'|3|P 9
+992|Brunel|Prunella grand. 'Loveliness'|2|P 9
+993|Brunel|Prunella webbiana 'Rosea'|2|P 9
+994|Longkruid|Pulmonaria off. 'Sissinghurst White|2,5|P 9
+995|Longkruid|Pulmonaria s. 'Mrs Moon'|2,5|P 9
+996|Wildemanskruid|Pulsatilla vulgaris|1,8|P 9
+997|Wildemanskruid|Pulsatilla vulgaris 'Alba'|1,8|P 9
+998|Wildemanskruid|Pulsatilla vulgaris 'Rubra'|1,8|P 9
+999|Rodgersia|Rodgersia aesculifolia|3|P 9
+1000|Zonnehoed|Trefnaam RUDFGOLD|1,8|P 9
+1001|Priemvetmuur|Sagina subulata|1,5|P 9
+1002|Salie|Salvia nemorosa 'Caradonna'|2,5|P 9
+1003|Salie|Salvia nemorosa 'Mainacht'|2,5|P 9
+1004|Salie|Salvia nemorosa 'Ostfriesland'|2|P 9
+1005|Salie|Salvia nemorosa 'Rose Queen'|1,8|P 9
+1006|Salie|Salvia nemorosa 'Schneehügel'|2,5|P 9
+1007|Kranssalie|Salvia verticillata 'Purple Rain'|2|P 9
+1008|Pimpernel|Sanguisorba obtusa|2,5|P 9
+1009|Heiligenbloem|Santolina chamaecyparissus|2|P 9
+1010|Zeepkruid|Saponaria ocymoides|1,5|P 9
+1011|Duifkruid|Scabiosa col. 'Butterfly Blue'|2,5|P 9
+1012|Muurpeper|Sedum acre|1,5|P 9
+1013|Hemelsleutel|Sedum spectabile 'Brillant'|2|P 9
+1014|Hemelsleutel|Sedum spectabile 'Stardust'|2|P 9
+1015|Rode muurpeper|Sedum spurium 'Schorbuser Blut'|1,8|P 9
+1016|Hemelsleutel|Sedum 'Herbstfreude'|2|P 9
+1017|Hemelsleutel|Sedum 'Matrona'|2,2|P 9
+1018|Huislook|Sempervivum varieteiten|1,5|P 9
+1019|Griekse malva|Sidalcea oregana 'Brilliant'|2|P 9
+1020|Griekse malva|Sidalcea 'Elsie Heugh'|2,5|P 9
+1021|Guldenroede|Solidago 'Goldkind'|2|P 9
+1022|Ezelsoor|Stachys byzantina 'Silver Carpet'|2|P 9
+1023|Smeerwortel|Symphytum grandiflorum|1,8|P 9
+1024|Gamander|Teucrium lucidrys|2|P 9
+1025|Ruit|Thalictrum del. 'Hewitt's Double'|4|P 9
+1026|Ruit|Thalictrum rochebrunianum|2,5|P 9
+1027|Kruiptijm|Thymus praecox 'Coccineus'|2|P 9
+1028|Schuimbloem|Tiarella cordifolia|2|P 9
+1029|Schuimbloem|Tiarella wherryi|2|P 9
+1030|Eendagsbloem|Tradescantia (A) 'Innocence'|2,5|P 9
+1031|Eendagsbloem|Tradescantia (A) 'Leonora'|2,5|P 9
+1032|Eendagsbloem|Tradescantia (A) 'Osprey'|2,5|P 9
+1033|Paddelelie, armeluisorchidee|Tricyrtis formosana|2|P 9
+1034|Kogelboterbloem|Trollius chinensis 'Golden Queen'|1,8|P 9
+1035|Zwarte toorts|Verbascum nigrum|1,8|P 9
+1036|IJzerhard|Verbena bonariensis|1,8|P 9
+1037|IJzerhard|Verbena hastata|1,8|P 9
+1038|Gentiaan-ereprijs|Veronica gent. 'Pallida'|2|P 9
+1039|Aar-ereprijs|Veronica spicata incana|2|P 9
+1040|Aar-ereprijs|Veronica spicata 'Rotfuchs'|2|P 9
+1041|Labradorviooltje|Viola labradorica|2|P 9
+1042|Hoornviooltje|Viola (C) 'Boughton Blue'|2|P 9
+1043|Goudaardbei |Waldsteinia ternata|1,5|P 9
+1044|Palmlelie|Yucca filamentosa|4|P 11
+1045|Palmlelie|Yuc+A1:D284ca filamentosa|7,5|lev. C3
+1046|Veldesdoorn / Spaanse Aak|Acer campestre|88|12/14 2xv
+1047|Veldesdoorn|Acer campestre 'Elsrijk'|82|10/12 2xv
+1048|Veldesdoorn|Acer campestre 'Elsrijk'|92|12/14 2xv
+1049|Bol Veldesdoorn|Acer campestre 'Nanum'|68|10/12 220cm stam
+1050|Colchische esdoorn|Acer cappadocicum 'Rubrum'|85|10/12 2xv
+1051|Colchische esdoorn|Acer cappadocicum 'Rubrum'|125|12/14 2xv
+1052|Noorse esdoorn|Acer platanoides|48|10/12 2xv
+1053|Noorse esdoorn|Acer platanoides|74|12/14 2xv
+1054|Noorse esdoorn rood|Acer plat. 'Crimson Sentry'|68|8/10 2xv beveerd
+1055|Noorse esdoorn rood|Acer plat. 'Crimson Sentry'|55|8/10 180cm stam
+1056|Noorse esdoorn rood|Acer plat. 'Crimson Sentry'|68|8/10 220cm stam
+1057|Bonte Noorse esdoorn|Acer plat. 'Drummondii'|68|10/12 2xv
+1058|Bonte Noorse esdoorn|Acer plat. 'Drummondii'|95|12/14 2xv
+1059|Bolesdoorn|Acer plat. 'Globosum'|62|10/12 180cm stam
+1060|Bolesdoorn|Acer plat. 'Globosum'|68|10/12 225cm stam
+1061|Bolesdoorn|Acer plat. 'Globosum'|92|12/14 225cm stam
+1062|Rode Noorse esdoorn|Acer plat. 'Royal Red'|74|10/12 2xv
+1063|Rode Noorse esdoorn|Acer plat. 'Royal Red'|98|12/14 2xv
+1064|Rode Noorse esdoorn|Acer plat. 'Royal Red'|130|14/16 2xv
+1065|Gewone esdoorn|Acer pseudoplatanus|64|12/14 2xv
+1066|Rode esdoorn|Acer rubrum 'Red Sunset'|95|10/12 2xv
+1067|Witte- of Zilveresdoorn|Acer saccharinum|82|12/14 2xv
+1068|Rode paardekastanje|Aesculus carnea 'Briotii'|78|10/12 2xv
+1069|Rode paardekastanje|Aesculus carnea 'Briotii'|105|12/14 2xv
+1070|Rode paardekastanje|Aesculus carnea 'Briotii'|125|12/14 2xv dr.kl.
+1071|Paardenkastanje|Aesculus hippocastanum|54|10/12 2xv
+1072|Paardenkastanje|Aesculus hippocastanum|78|12/14 2xv
+1073|Paardenkastanje|Aesculus hip. 'Baumannii'|82|12/14 2xv
+1074|Dwergpaardenkastanje|Aesculus pavia discolor|105|10/12 220cm stam
+1075|Zwarte els|Alnus glutinosa|58|12/14 2xv
+1076|Zwarte els|Alnus glutinosa 'Laciniata'|78|10/12 2xv
+1077|Els|Alnus spaethii|58|10/12 2xv
+1078|Els|Alnus spaethii|78|12/14 2xv
+1079|Krent|Amelanchier laevis 'Ballerina'|78|10/12 2xv
+1080|Krentenboompje|Amelanchier lamarckii|110|10/12 2xv
+1081|Berk|Betula ermanii 'Holland'|95|10/12 Cont.
+1082|Ruwe berk|Betula pendula|48|10/12 2xv
+1083|Ruwe berk|Betula pendula|62|12/14 2xv
+1084|Ruwe berk|Betula pendula|15|200-225 cm
+1085|Treurberk|Betula p. 'Tristis'|82|10/12 2xv
+1086|Prieelberk|Betula p. 'Youngii'|72|8/10 200cm stam
+1087|Witte Hymalaya berk|Betula utilis 'Doorenbos'|95|10/12 Cont.
+1088|Witte Hymalaya berk|Betula utilis 'Doorenbos'|125|12/14 2xv
+1089|Haagbeuk|Carpinus betulus|82|12/14 2xv
+1090|Zuil Haagbeuk|Carpinus betulus 'Fastigiata'|68|10/12 2xv beveerd
+1091|Zuil Haagbeuk|Carpinus betulus 'Fastigiata'|92|12/14 2xv beveerd
+1092|Tamme kastanje|Castanea sativa|62|10/12 2xv
+1093|Tamme kastanje|Castanea sativa|85|12/14 2xv
+1094|Trompetboom|Catalpa bignonioides|82|12/14 2xv
+1095|Gouden trompetboom|Catalpa bignonioides 'Aurea'|88|10/12 220cm stam
+1096|Boltrompetboom|Catalpa bignonioides 'Nana'|88|12/14 220cm stam
+1097|Boltrompetboom|Catalpa bignonioides 'Nana'|32|120cm stam
+1098|Boltrompetboom|Catalpa bignonioides 'Nana'|54|10/12  150cm stam
+1099|Boltrompetboom|Catalpa bignonioides 'Nana'|62|10/12 180cm stam
+1100|Boltrompetboom|Catalpa bignonioides 'Nana'|68|10/12 225cm stam
+1101|Katsuraboom|Cercidiphyllum japonicum|88|10/12 2xv kluit
+1102|Amerikaanse Kornoelje|Cornus florida|115|250-275cm kluit
+1103|Japanse Kornoelje|Cornus kousa chinensis|115|250-275cm kluit
+1104|Gele Kornoelje|Cornus mas|72|10/12 2xv
+1105|Gele Kornoelje|Cornus mas|55|250-275cm kluit
+1106|Kronkelhazelaar|Corylus avellana 'Contorta'|88|8/10 180cm stam
+1107|Boomhazelaar|Corylus colurna|68|10/12 2xv
+1108|Rode Meidoorn|Crataegus xmedia 'Paul's Scarlet'|68|10/12 2xv
+1109|Rode Meidoorn|Crataegus xmedia 'Paul's Scarlet'|85|12/14 2xv
+1110|Meidoorn|Crataegus lavalleei|72|10/12 2xv
+1111|Pruimbladige meidoorn|Crataegus persimilis 'Splendens'|82|10/12 2xv
+1112|Beuk|Fagus sylvatica|88|10/12 2xv
+1113|Beuk|Fagus sylvatica|98|12/14 3xv
+1114|Beuk|Fagus sylvatica|145|14/16 3xv dr.kl.
+1115|Beuk|Fagus sylvatica|20|225-250cm Spil
+1116|Rode Beuk|Fagus syl. 'Atropunicea'|115|10/12 2xv kluit
+1117|Rode Beuk|Fagus syl. 'Atropunicea'|185|12/14 2xv dr.kl.
+1118|Rode Beuk|Fagus syl. 'Atropunicea'|225|14/16 3xv dr.kl.
+1119|Rode Beuk|Fagus syl. 'Atropunicea'|25|225-250cm Spil
+1120|Zuilbeuk|Fagus syl. 'Dawyck'|125|10/12 kluit beveerd
+1121|Zuilbeuk|Fagus syl. 'Dawyck'|45|175-200cm kluit
+1122|Rode zuilbeuk|Fagus syl. 'Dawyck Purple'|125|10/12 kluit beveerd
+1123|Rode zuilbeuk|Fagus syl. 'Dawyck Purple'|82|200-250cm dr.kl.
+1124|Gele zuilbeuk|Fagus syl. 'Dawyck Gold'|125|10/12 kluit beveerd
+1125|Gele zuilbeuk|Fagus syl. 'Dawyck Gold'|55|175-200cm kluit
+1126|Rode treurbeuk|Fagus syl. 'Purple Fountain'|95|8/10 kluit beveerd
+1127|Rode treurbeuk|Fagus syl. 'Purpurea Pendula'|120|10/12 2xv dr.kl.
+1128|Rode treurbeuk|Fagus syl. 'Purpurea Pendula'|68|200-225cm kluit
+1129|Rode zuilbeuk|Fagus syl. 'Rohan Obelisk'|95|8/10 kluit beveerd
+1130|Smalbladige Es|Fraxinus ang. 'Raywood'|58|10/12 2xv
+1131|Smalbladige Es|Fraxinus ang. 'Raywood'|78|12/14 2xv
+1132|Goudes|Fraxinus exc. 'Jaspidea'|78|10/12 2xv
+1133|Gewone Es|Fraxinus exc. 'Westhof's Glorie'|52|10/12 2xv
+1134|Gewone Es|Fraxinus exc. 'Westhof's Glorie'|68|12/14 2xv
+1135|Gewone Es|Fraxinus exc. 'Westhof's Glorie'|92|14/16 2xv
+1136|Valse Christusdoorn|Gleditsia triac. 'Sunburst'|68|8/10 2xv
+1137|Valse Christusdoorn|Gleditsia triac. 'Sunburst'|88|10/12 2xv
+1138|Walnoot, Okkernoot|Juglans regia|55|8/10 2xv
+1139|Walnoot, Okkernoot|Juglans regia|95|10/12 2xv
+1140|Walnoot, Okkernoot|Juglans regia|120|12/14 2xv
+1141|Walnoot, Okkernoot|Juglans regia|155|14/16 2xv
+1142|Chinese Vernisboom / Blazenboom|Koelreuteria paniculata|88|10/12 2xv
+1143|Gouden regen|Laburnum wat. 'Vossii'|72|10/12 2xv
+1144|Gouden regen|Laburnum wat. 'Vossii'|56|6/8 180cm stam
+1145|Amberboom|Liquidambar styraciflua|110|10/12 2xv dr.kl.
+1146|Amberboom|Liquidambar styraciflua|155|12/14 2xv dr.kl.
+1147|Amberboom|Liquidambar styraciflua|42|175-200cm kluit
+1148|Bol Amberboom|Liquidambar st. 'Gum Ball'|124|10/12 225cm st. dk
+1149|Zuil amberboom|Liquidambar st. 'Slender Silh'|78|200-250cm dk bev.
+1150|Amberboom|Liquidambar st. 'Worplesdon'|120|10/12 dr.kluit beveerd
+1151|Amberboom|Liquidambar st. 'Worplesdon'|165|12/14 dr.kluit beveerd
+1152|Amberboom|Liquidambar st. 'Worplesdon'|48|225-250 cm
+1153|Tulpenboom|Liriodendron tulipifera|96|10/12 2xv kluit
+1154|Tulpenboom|Liriodendron tulp. 'Fastigiatum'|98|8/10 kluit
+1155|Beverboom|Magnolia kobus|120|10/12 kluit
+1156|Sierappel|Malus 'Evereste'|36|Halfstam
+1157|Sierappel|Malus 'Evereste'|46|Hoogstam
+1158|Sierappel|Malus 'Evereste'|75|10/12 180cm stam
+1159|Sierappel|Malus 'Golden Hornet'|36|Halfstam
+1160|Sierappel|Malus 'Golden Hornet'|46|Hoogstam
+1161|Sierappel|Malus 'Golden Hornet'|75|10/12 180cm stam
+1162|Sierappel|Malus 'John Downie'|46|Hoogstam
+1163|Sierappel|Malus 'John Downie'|75|10/12 180cm stam
+1164|Treur sierappel|Malus 'Red Jade'|65|8/10 180cm stam
+1165|Sierappel|Malus 'Red Sentinel'|88|12/14 2xv
+1166|Sierappel|Malus 'Red Sentinel'|36|Halfstam
+1167|Sierappel|Malus 'Red Sentinel'|46|Hoogstam
+1168|Sierappel|Malus 'Red Sentinel'|75|10/12 180cm stam
+1169|Sierappel|Malus 'Rudolph'|36|Halfstam
+1170|Sierappel|Malus 'Rudolph'|46|Hoogstam
+1171|Witte moerbei steriel|Morus alba 'Fruitless'|185|12/14 dakvorm
+1172|Witte moerbei (grootbladige)|Morus alba 'Macrophylla'|145|12/14 dakvorm
+1173|Witte moerbei (grootbladige)|Morus alba 'Macrophylla'|98|12/14 220cm stam
+1174|Witte moerbei (grootbladige)|Morus alba 'Macrophylla'|85|10/12 220cm stam
+1175|Schijnbeuk|Nothofagus antarctica|115|10/12 2xv kluit
+1176|Schijnbeuk|Nothofagus antarctica|35|150-175cm kluit
+1177|Vlamboom|Parrotia persica 'Vanessa'|110|10/12 2xv dr.kl.
+1178|Plataan|Platanus xhispanica|62|10/12 2xv
+1179|Plataan|Platanus xhispanica|74|12/14 2xv
+1180|Plataan|Platanus xhispanica|110|12/14 dakvorm
+1181|Plataan|Platanus xhispanica|120|12/14 leivorm
+1182|Plataan|Platanus xhispanica|98|14/16 3xv
+1183|Plataan|Platanus xhispanica|145|14/16 dakvorm
+1184|Plataan|Platanus xhispanica|165|14/16 leivorm
+1185|Plataan|Platanus xhispanica|128|16/18 3xv
+1186|Plataan|Platanus xhispanica|175|16/18 Dakvorm
+1187|Bol plataan|Platanus xhisp.'Alphens Globe'|95|12/14 220cm stam
+1188|Bol plataan|Platanus xhisp.'Alphens Globe'|75|10/12 220cm stam
+1189|Plataan|Platanus orientalis 'Minaret'|88|10/12 2xv beveerd
+1190|Dubbele zoetekers|Prunus avium 'Plena'|72|10/12 2xv
+1191|Rode Kerspruim|Prunus cerasifera 'Nigra'|72|10/12 2xv
+1192|Rode Kerspruim|Prunus cerasifera 'Nigra'|145|14/16 3xv
+1193|Rode Kerspruim|Prunus cerasifera 'Nigra'|42|Halfstam
+1194|Bol prunus|Prunus eminens 'Umbraculifera'|44|8/10 150cm stam
+1195|Bol prunus|Prunus eminens 'Umbraculifera'|60|8/10 180cm stam
+1196|Bol prunus|Prunus eminens 'Umbraculifera'|80|10/12 220cm stam
+1197|Zuil sierkers|Prunus serrulata 'Amanogawa'|45|8/10 2xv beveerd
+1198|Zuil sierkers|Prunus serrulata 'Amanogawa'|68|10/12 2xv beveerd
+1199|Zuil sierkers|Prunus serrulata 'Amanogawa'|28|175-200 cm
+1200|Japanse sierkers|Prunus serrulata 'Kanzan'|58|10/12 180cm stam
+1201|Treursierkers|Prunus serrulata 'Kiku-shidare'|54|10/12 200cm stam
+1202|Sierkers|Prunus subh. 'Autumnalis Rosea'|54|10/12 180cm stam
+1203|Vleugelnoot|Pterocarya fraxinifolia|115|10/12 2xv
+1204|Vleugelnoot|Pterocarya fraxinifolia|150|12/14 2xv dr.kl.
+1205|Sierpeer|Pyrus calleryana 'Chanticleer'|68|8/10 wortelg.
+1206|Sierpeer|Pyrus calleryana 'Chanticleer'|88|10/12 2xv
+1207|Sierpeer|Pyrus calleryana 'Chanticleer'|105|12/14 2xv wg
+1208|Sierpeer|Pyrus calleryana 'Chanticleer'|190|12/14 leivorm
+1209|Sierpeer|Pyrus calleryana 'Chanticleer'|175|14/16 3xv
+1210|Wilgbladige treurpeer|Pyrus salicifolia 'Pendula'|95|8/10 200cm stam
+1211|Moeraseik|Quercus palustris|72|10/12 2xv
+1212|Moeraseik|Quercus palustris|96|12/14 2xv
+1213|Zomereik|Quercus robur|68|10/12 2xv
+1214|Zomereik|Quercus robur|96|12/14 2xv
+1215|Zomereik|Quercus robur|16|225-250 cm
+1216|Zuileik|Quercus r. 'Fastigiate Koster'|95|10/12 2xv beveerd
+1217|Amerikaanse eik|Quercus rubra|76|12/14 3xv
+1218|Acacia|Robinia ps. 'Bessoniana'|120|12/14 3xv
+1219|Gele Acacia|Robinia ps. 'Frisia'|75|8/10 2xv
+1220|Bolacacia|Robinia ps. 'Umbraculifera'|38|8/10 150cm stam
+1221|Bolacacia|Robinia ps. 'Umbraculifera'|58|10/12 180cm stam
+1222|Bolacacia|Robinia ps. 'Umbraculifera'|62|10/12 225cm stam
+1223|Schietwilg / knotwilg|Salix alba 'Belders'|36|10/12 2xv
+1224|Schietwilg|Salix alba 'Chermesina'|48|10/12 2xv
+1225|Schietwilg|Salix alba 'Chermesina'|66|12/14 2xv
+1226|Treurwilg (Gele)|Salix sepulcralis 'Chrysocoma'|55|10/12 2xv
+1227|Treurwilg (Gele)|Salix sepulcralis 'Chrysocoma'|75|12/14 2xv
+1228|Treurwilg (Gele)|Salix sepulcralis 'Chrysocoma'|35|250-275 cm
+1229|Gewone lijsterbes|Sorbus aucuparia|58|10/12 2xv
+1230|Gewone lijsterbes|Sorbus aucuparia|78|12/14 2xv
+1231|Zweedse meelbes|Sorbus intermedia 'Brouwers'|85|10/12 2xv
+1232|Bastaard meelbes|Sorbus thur. 'Fastigiata'|85|10/12 2xv
+1233|Winter - of Kleinbladige linde|Tilia cordata 'Greenspire'|72|12/14 2xv
+1234|Winter - of Kleinbladige linde|Tilia cordata 'Greenspire'|115|12/14 leivorm
+1235|Winter - of Kleinbladige linde|Tilia cordata 'Greenspire'|92|14/16 2xv
+1236|Winter - of Kleinbladige linde|Tilia cordata 'Greenspire'|130|14/16 leivorm
+1237|Winter - of Kleinbladige linde|Tilia cordata 'Greenspire'|125|16/18 3xv
+1238|Krimlinde|Tilia europaea 'Euchlora'|82|12/14 2xv
+1239|Koningslinde|Tilia europaea 'Pallida'|82|12/14 2xv
+1240|Koningslinde|Tilia europaea 'Pallida'|145|12/14 leivorm
+1241|Koningslinde|Tilia europaea 'Pallida'|98|14/16 3xv
+1242|Koningslinde|Tilia europaea 'Pallida'|185|14/16 leivorm
+1243|Zomerlinde, Grootbladige linde|Tilia platyphyllos|72|12/14 2xv
+1244|Zomerlinde, Grootbladige linde|Tilia platyphyllos|92|14/16 2xv
+1245|Zilverlinde|Tilia tomentosa 'Brabant'|85|12/14 2xv
+1246|Goudiep|Ulmus holl. 'Wredei'|46|175-200cm Beveerd
+1247|Goudiep|Ulmus holl. 'Wredei'|78|275-300 cm Beveerd
+1248|Japanse notenboom|Ginkgo biloba|98|10/12 2xv kluit
+1249|Japanse notenboom|Ginkgo biloba|58|200-225cm kluit
+1250|Chineese moerascipres|Metasequoia glyptostroboides|88|10/12 2xv kluit
+1251|Chineese moerascipres|Metasequoia glyptostroboides|48|200-225cm kluit
+1252|Moerascypres|Taxodium distichum|110|10/12 2xv dr.kl.
+1253|Moerascypres|Taxodium distichum|58|200-225cm kluit
