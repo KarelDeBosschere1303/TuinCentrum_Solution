@@ -5,11 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using TuinCentrum_BL.Interfaces;
 using TuinCentrum_BL.Model;
+using TuinCentrum_BL.Managers;
 
 namespace TuinCentrumDL_File
 {
     public class FileProcessor : IFileProcessor
     {
+        private ITuinCentrumRepository _tuinCentrumRepository;
+        public FileProcessor(ITuinCentrumRepository tuinCentrumRepository)
+        {
+            _tuinCentrumRepository = tuinCentrumRepository;
+        }
         public List<Klant> LeesKlanten(string fileName)
         {
             try
@@ -20,14 +26,11 @@ namespace TuinCentrumDL_File
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string[] parts = line.Split(';');
+                        string[] parts = line.Split('|');
                         if (parts.Length == 3)
                         {
-                            // Hier wordt het ID nog niet toegevoegd aan de klant
-                             // Je kunt hier later de ID toevoegen
-                            string naam = parts[0];
-                            string adres = parts[1];
-                            // Maak een nieuwe klant aan zonder ID
+                            string naam = parts[1];
+                            string adres = parts[2];
                             Klant klant = new Klant(naam, adres);
                             klanten.Add(klant);
                         }
@@ -44,6 +47,7 @@ namespace TuinCentrumDL_File
                 throw new Exception($"Fout bij het lezen van klantenbestand {fileName}: {ex.Message}");
             }
         }
+
         public List<Product> LeesProducten(string fileName)
         {
             try
@@ -54,18 +58,24 @@ namespace TuinCentrumDL_File
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string[] parts = line.Split(';');
-                        if (parts.Length == 4)
+                        string[] parts = line.Split('|');
+                        if (parts.Length == 5)
                         {
-                            // Hier wordt het ID nog niet toegevoegd aan het product
-                            int? id = null; // Je kunt hier later het ID toevoegen
-                            string naam = parts[0];
-                            string wetenschappelijkeNaam = parts[1];
-                            decimal prijs = decimal.Parse(parts[2]);
-                            string beschrijving = parts[3];
-                            // Maak een nieuw product aan zonder ID
+                            int id = int.Parse(parts[0]);
+                            string naam = parts[1];
+                            string wetenschappelijkeNaam = parts[2];
+                            decimal prijs = decimal.Parse(parts[3]);
+                            string beschrijving = parts[4];
+                            if (string.IsNullOrEmpty(naam))
+                            {
+                                continue; // Skip this product and go to the next line
+                            }
+
+
+                            producten.Add(new Product(id, naam, wetenschappelijkeNaam, prijs, beschrijving));
 
                         }
+                       
                         else
                         {
                             throw new Exception("Ongeldige productregel: " + line);
@@ -79,43 +89,109 @@ namespace TuinCentrumDL_File
                 throw new Exception($"Fout bij het lezen van productenbestand {fileName}: {ex.Message}");
             }
         }
-        public List<Offerte> LeesOffertes(string fileName)
+
+        public List<Offerte> LeesOffertes(string fileName, string fileName2)
         {
             try
             {
                 List<Offerte> offertes = new List<Offerte>();
+
                 using (StreamReader reader = new StreamReader(fileName))
                 {
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string[] parts = line.Split(';');
-                        if (parts.Length == 4)
+                        string[] parts = line.Split('|');
+                        if (parts.Length == 6)
                         {
-                            // Hier wordt het ID nog niet toegevoegd aan de offerte
-                           
-                            DateTime datum = DateTime.Parse(parts[0]);
-                            Klant klant = null; // Je kunt hier later de klant toevoegen
-                            bool afhaal = bool.Parse(parts[2]);
-                            bool aanleg = bool.Parse(parts[3]);
-                            // Maak een nieuwe offerte aan zonder ID
-                            Offerte offerte = new Offerte(datum, klant, afhaal, aanleg);
-                            offertes.Add(offerte);
+                            DateTime datum = DateTime.Parse(parts[1]);
+                            int klantnummer = int.Parse(parts[2]);
+                            bool afhaal = bool.Parse(parts[3]);
+                            bool aanleg = bool.Parse(parts[4]);
+
+                            // Zorg ervoor dat klantnummer niet 0 is
+                            if (klantnummer == 0)
+                            {
+                                throw new Exception("Klantnummer mag niet 0 zijn");
+                            }
+
+                            // Lees de productinformatie uit het tweede bestand
+                            var productLijnen = LeesOffertes_Producten(fileName2)
+                                .Where(p => p.StartsWith(parts[0] + ","));
+
+                            Dictionary<Product, int> producten = new Dictionary<Product, int>();
+
+                            foreach (var productLijn in productLijnen)
+                            {
+                                string[] productParts = productLijn.Split(',');
+                                if (productParts.Length == 3)
+                                {
+                                    int productId = int.Parse(productParts[1]);
+                                    int aantal = int.Parse(productParts[2]);
+                                    Product product = _tuinCentrumRepository.GetProductById(productId);
+
+                                    if (product != null)
+                                    {
+                                        producten.Add(product, aantal);
+                                        offertes.Add(new Offerte(datum, klantnummer, afhaal, aanleg, producten));
+                                    }
+                                    // else block removed
+                                }
+                                // else block removed
+                            }
+
                         }
                         else
                         {
-                            throw new Exception("Ongeldige offertesregel: " + line);
+                            throw new Exception($"Ongeldige offertelijn: {line}");
                         }
                     }
                 }
+
                 return offertes;
             }
             catch (Exception ex)
             {
-                throw new Exception($"Fout bij het lezen van offertesbestand {fileName}: {ex.Message}");
+                throw new Exception($"Fout bij het lezen van offertebestand {fileName}: {ex.Message}", ex);
             }
         }
-     
+
+
+        public List<string> LeesOffertes_Producten(string fileName)
+        {
+            try
+            {
+                List<string> offerteProducten = new List<string>();
+                using (StreamReader reader = new StreamReader(fileName))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        string[] parts = line.Split('|');
+                        if (parts.Length == 3)
+                        {
+                            int offerteid = int.Parse(parts[0]);
+                            int productid = int.Parse(parts[1]);
+                            int aantal = int.Parse(parts[2]);
+                            string offerteProduct = $"{offerteid},{productid},{aantal}";
+                            offerteProducten.Add(offerteProduct);
+                        }
+                        else
+                        {
+                            throw new Exception("Ongeldige offerteproductregel: " + line);
+                        }
+                    }
+                }
+                return offerteProducten;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Fout bij het lezen van offerteproductenbestand {fileName}: {ex.Message}");
+            }
+        }
+
 
     }
 }
+
+

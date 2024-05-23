@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{FF87CC32-9F69-473C-964A-BD6C216E884D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program", "Program\Program.csproj", "{FF87CC32-9F69-473C-964A-BD6C216E884D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuinCentrum_BL", "TuinCentrum_BL\TuinCentrum_BL.csproj", "{7E190341-C4AE-433D-8CCD-18C0A693D6DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuinCentrum_BL", "TuinCentrum_BL\TuinCentrum_BL.csproj", "{7E190341-C4AE-433D-8CCD-18C0A693D6DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuinCentrum_DL_SQL", "TuinCentrum_DL\TuinCentrum_DL_SQL.csproj", "{F26CAB0D-0AD7-4F71-8692-2A18862D3911}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuinCentrum_UI_Statistieken", "TuinCentrum_UI\TuinCentrum_UI_Statistieken.csproj", "{F10E4F62-49B4-41E2-A1B0-01978C5C475F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuinCentrum_UI_Statistieken", "TuinCentrum_UI\TuinCentrum_UI_Statistieken.csproj", "{F10E4F62-49B4-41E2-A1B0-01978C5C475F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuinCentrumDL_File", "TuinCentrumDL_File\TuinCentrumDL_File.csproj", "{49B3515A-5273-4440-A005-D306A9F08BF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuinCentrumDL_File", "TuinCentrumDL_File\TuinCentrumDL_File.csproj", "{49B3515A-5273-4440-A005-D306A9F08BF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuinCentrum_UI_Upload", "TuinCentrum_UI_Upload\TuinCentrum_UI_Upload.csproj", "{F5B49126-F14C-4AA6-A91E-CAFF4414F3AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuinCentrum_UI_Upload", "TuinCentrum_UI_Upload\TuinCentrum_UI_Upload.csproj", "{F5B49126-F14C-4AA6-A91E-CAFF4414F3AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuinCentrumDL_SQL", "TuinCentrumDL_SQL\TuinCentrumDL_SQL.csproj", "{3FD577C3-1B9E-435D-8BCD-A35384CCBB4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{7E190341-C4AE-433D-8CCD-18C0A693D6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E190341-C4AE-433D-8CCD-18C0A693D6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E190341-C4AE-433D-8CCD-18C0A693D6DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F26CAB0D-0AD7-4F71-8692-2A18862D3911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F26CAB0D-0AD7-4F71-8692-2A18862D3911}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F26CAB0D-0AD7-4F71-8692-2A18862D3911}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F26CAB0D-0AD7-4F71-8692-2A18862D3911}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F10E4F62-49B4-41E2-A1B0-01978C5C475F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F10E4F62-49B4-41E2-A1B0-01978C5C475F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F10E4F62-49B4-41E2-A1B0-01978C5C475F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{F5B49126-F14C-4AA6-A91E-CAFF4414F3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5B49126-F14C-4AA6-A91E-CAFF4414F3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5B49126-F14C-4AA6-A91E-CAFF4414F3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD577C3-1B9E-435D-8BCD-A35384CCBB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD577C3-1B9E-435D-8BCD-A35384CCBB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD577C3-1B9E-435D-8BCD-A35384CCBB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD577C3-1B9E-435D-8BCD-A35384CCBB4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

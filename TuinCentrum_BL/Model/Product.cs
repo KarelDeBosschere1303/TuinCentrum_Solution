@@ -9,6 +9,8 @@ namespace TuinCentrum_BL.Model
 {
     public class Product
     {
+        private int id;
+        public int Id { get; set; }
         private string naam;
         public string Naam { get; set;}
         private string wetenschappelijkeNaam;
@@ -18,8 +20,10 @@ namespace TuinCentrum_BL.Model
         private string beschrijving;
         public string Beschrijving { get; set; }
 
-        public Product(string naam, string wetenschappelijkeNaam, decimal prijs, string beschrijving)
+      
+        public Product(int id, string naam, string wetenschappelijkeNaam, decimal prijs, string beschrijving)
         {
+            Id = id;
             Naam = naam;
             WetenschappelijkeNaam = wetenschappelijkeNaam;
             Prijs = prijs;

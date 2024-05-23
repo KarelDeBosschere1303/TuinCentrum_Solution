@@ -1,15 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TuinCentrumDL_File\TuinCentrumDL_File.csproj" />
-    <ProjectReference Include="..\TuinCentrumDL_SQL\TuinCentrumDL_SQL.csproj" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TuinCentrum_BL\TuinCentrum_BL.csproj" />
   </ItemGroup>
 
