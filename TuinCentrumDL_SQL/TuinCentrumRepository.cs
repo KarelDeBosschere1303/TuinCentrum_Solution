@@ -77,13 +77,13 @@ namespace TuinCentrumDL_SQL
             {
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
+                    connection.Open();
                     command.Parameters.AddWithValue("@Datum", offerte.Datum);
                     command.Parameters.AddWithValue("@KlantNummer", offerte.KlantNummer);
                     command.Parameters.AddWithValue("@Afhaal", offerte.Afhaal);
                     command.Parameters.AddWithValue("@Aanleg", offerte.Aanleg);
                     command.Parameters.AddWithValue("@Kostprijs", offerte.BerekenTotaleKostPrijs());
 
-                    connection.Open();
                     int count = (int)command.ExecuteScalar();
                     if (count > 0)
                     {
@@ -182,13 +182,13 @@ namespace TuinCentrumDL_SQL
         public void SchrijfOffertes(List<Offerte> offertes)
         {
             string sqlInsertOfferte = @"
-        INSERT INTO Offertes (Datum, KlantNummer, Afhaal, Aanleg, Kostprijs) 
-        OUTPUT INSERTED.Id
-        VALUES (@Datum, (SELECT Id FROM Klanten WHERE Id = @KlantNummer), @Afhaal, @Aanleg, @Kostprijs)";
+                INSERT INTO Offertes (Datum, KlantNummer, Afhaal, Aanleg, Kostprijs) 
+                OUTPUT INSERTED.Id
+                VALUES (@Datum, (SELECT Id FROM Klanten WHERE Id = @KlantNummer), @Afhaal, @Aanleg, @Kostprijs)";
 
             string sqlInsertOfferteProducten = @"
-        INSERT INTO OfferteProducten (OfferteId, ProductId, Aantal) 
-        VALUES (@OfferteId, @ProductId, @Aantal)";
+                INSERT INTO OfferteProducten (OfferteId, ProductId, Aantal) 
+                VALUES (@OfferteId, @ProductId, @Aantal)";
 
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
@@ -224,6 +224,9 @@ namespace TuinCentrumDL_SQL
                         }
                     }
                 }
+
+                // Log the count of inserted offertes
+                Console.WriteLine($"Inserted {offertes.Count} offertes.");
             }
         }
         public void GetAllProducten(List<Product> producten)

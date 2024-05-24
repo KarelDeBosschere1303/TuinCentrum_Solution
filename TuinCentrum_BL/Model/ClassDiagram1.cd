@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TuinCentrum_BL.Model.Klant" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAABAAAAAwAAAAIAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Klant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TuinCentrum_BL.Model.Product" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAACABAAgAAQAIgAAAQAAAAEAAgA=</HashCode>
+      <FileName>Model\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TuinCentrum_BL.Model.Offerte" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAoCAQAAAQBAAAAASAACAAAAAAACAAAAAgAKIAAACgE=</HashCode>
+      <FileName>Model\Offerte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

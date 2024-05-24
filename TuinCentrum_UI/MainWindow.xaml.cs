@@ -18,7 +18,7 @@ namespace TuinCentrum_UI
     {
         public MainWindow()
         {
-            InitializeComponent();
+           
         }
     }
 }

@@ -95,7 +95,37 @@ namespace TuinCentrumDL_File
             try
             {
                 List<Offerte> offertes = new List<Offerte>();
+                int offerteCount = 0;
 
+                // Lees alle productinformatie uit het tweede bestand en sla het op in een dictionary
+                Dictionary<int, List<(int, int)>> offerteProducten = new Dictionary<int, List<(int, int)>>();
+
+                using (StreamReader reader = new StreamReader(fileName2))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        string[] parts = line.Split('|');
+                        if (parts.Length == 3)
+                        {
+                            int offerteId = int.Parse(parts[0]);
+                            int productId = int.Parse(parts[1]);
+                            int aantal = int.Parse(parts[2]);
+
+                            if (!offerteProducten.ContainsKey(offerteId))
+                            {
+                                offerteProducten[offerteId] = new List<(int, int)>();
+                            }
+                            offerteProducten[offerteId].Add((productId, aantal));
+                        }
+                        else
+                        {
+                            throw new Exception("Ongeldige offerteproductregel: " + line);
+                        }
+                    }
+                }
+
+                // Verwerk het offertebestand
                 using (StreamReader reader = new StreamReader(fileName))
                 {
                     string line;
@@ -104,6 +134,7 @@ namespace TuinCentrumDL_File
                         string[] parts = line.Split('|');
                         if (parts.Length == 6)
                         {
+                            int offerteId = int.Parse(parts[0]);
                             DateTime datum = DateTime.Parse(parts[1]);
                             int klantnummer = int.Parse(parts[2]);
                             bool afhaal = bool.Parse(parts[3]);
@@ -115,31 +146,24 @@ namespace TuinCentrumDL_File
                                 throw new Exception("Klantnummer mag niet 0 zijn");
                             }
 
-                            // Lees de productinformatie uit het tweede bestand
-                            var productLijnen = LeesOffertes_Producten(fileName2)
-                                .Where(p => p.StartsWith(parts[0] + ","));
-
+                            // Haal de productinformatie voor deze offerte op
                             Dictionary<Product, int> producten = new Dictionary<Product, int>();
-
-                            foreach (var productLijn in productLijnen)
+                            if (offerteProducten.TryGetValue(offerteId, out var productLijst))
                             {
-                                string[] productParts = productLijn.Split(',');
-                                if (productParts.Length == 3)
+                                foreach (var (productId, aantal) in productLijst)
                                 {
-                                    int productId = int.Parse(productParts[1]);
-                                    int aantal = int.Parse(productParts[2]);
                                     Product product = _tuinCentrumRepository.GetProductById(productId);
-
                                     if (product != null)
                                     {
                                         producten.Add(product, aantal);
-                                        offertes.Add(new Offerte(datum, klantnummer, afhaal, aanleg, producten));
                                     }
-                                    // else block removed
                                 }
-                                // else block removed
                             }
 
+                            // Voeg de offerte met producten toe aan de lijst
+                            offertes.Add(new Offerte(datum, klantnummer, afhaal, aanleg, producten));
+                            offerteCount++;
+                            Console.WriteLine($"Offerte {offerteCount} logged.");
                         }
                         else
                         {
@@ -155,7 +179,6 @@ namespace TuinCentrumDL_File
                 throw new Exception($"Fout bij het lezen van offertebestand {fileName}: {ex.Message}", ex);
             }
         }
-
 
         public List<string> LeesOffertes_Producten(string fileName)
         {
