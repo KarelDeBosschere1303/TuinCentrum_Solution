@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace TuinCentrum_UI
+namespace TuinCentrumUi
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -21,6 +21,12 @@ namespace TuinCentrum_BL.Model
             Naam = naam ?? throw new ArgumentNullException(nameof(naam));
             Adres = adres ?? throw new ArgumentNullException(nameof(adres));
         }
+        public Klant (int id ,string naam,string adres)
+        {
+            Id = id;
+            Naam = naam;
+            Adres = adres;
+        }
     }
             
 }

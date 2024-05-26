@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TuinCentrum_UI
+namespace testjes
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -18,7 +18,7 @@ namespace TuinCentrum_UI
     {
         public MainWindow()
         {
-           
+            InitializeComponent();
         }
     }
 }

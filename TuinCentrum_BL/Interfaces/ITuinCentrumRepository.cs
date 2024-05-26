@@ -16,6 +16,10 @@ namespace TuinCentrum_BL.Interfaces
         void SchrijfProducten(List<Product> producten);
         void SchrijfOffertes(List<Offerte> offertes);
         Product GetProductById(int productId);
+        List <Product> GetAllProducten();
+        List <Klant> GetKlanten();
+        List <Offerte> GetOffertes();
+
 
 
 

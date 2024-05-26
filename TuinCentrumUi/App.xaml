@@ -1,7 +1,7 @@
-﻿<Application x:Class="TuinCentrum_UI.App"
+﻿<Application x:Class="TuinCentrumUi.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:TuinCentrum_UI"
+             xmlns:local="clr-namespace:TuinCentrumUi"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

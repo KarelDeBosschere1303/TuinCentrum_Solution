@@ -75,7 +75,7 @@ namespace TuinCentrumDL_File
                             producten.Add(new Product(id, naam, wetenschappelijkeNaam, prijs, beschrijving));
 
                         }
-                       
+
                         else
                         {
                             throw new Exception("Ongeldige productregel: " + line);
@@ -125,6 +125,9 @@ namespace TuinCentrumDL_File
                     }
                 }
 
+                // Haal alle producten op
+                List<Product> allProducts = _tuinCentrumRepository.GetAllProducten();
+
                 // Verwerk het offertebestand
                 using (StreamReader reader = new StreamReader(fileName))
                 {
@@ -152,7 +155,7 @@ namespace TuinCentrumDL_File
                             {
                                 foreach (var (productId, aantal) in productLijst)
                                 {
-                                    Product product = _tuinCentrumRepository.GetProductById(productId);
+                                    Product product = allProducts.Find(p => p.Id == productId);
                                     if (product != null)
                                     {
                                         producten.Add(product, aantal);
@@ -179,8 +182,11 @@ namespace TuinCentrumDL_File
                 throw new Exception($"Fout bij het lezen van offertebestand {fileName}: {ex.Message}", ex);
             }
         }
+    
+    
 
-        public List<string> LeesOffertes_Producten(string fileName)
+
+    public List<string> LeesOffertes_Producten(string fileName)
         {
             try
             {

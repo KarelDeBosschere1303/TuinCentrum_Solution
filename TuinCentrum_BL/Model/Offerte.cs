@@ -23,19 +23,16 @@ namespace TuinCentrum_BL.Model
         private decimal kostprijs;
         public decimal KostPrijs { get; set; }
 
+        public Offerte() { }
 
-        public Offerte(int id, DateTime datum, int klantNummer, bool afhaal, bool aanleg, Dictionary<Product, int> producten)
+        public Offerte(int id, DateTime datum, int klantnummer, bool afhaal, bool aanleg, decimal kostprijs)
         {
             Id = id;
             Datum = datum;
-            KlantNummer = klantNummer; // Hier wijs je het klantnummer toe
+            KlantNummer = klantnummer;
             Afhaal = afhaal;
             Aanleg = aanleg;
-            Producten = new Dictionary<Product, int>();
-            KostPrijs = BerekenTotaleKostPrijs();
-        }
-        public Offerte()
-        {
+            KostPrijs = kostprijs;
 
         }
 
@@ -49,7 +46,7 @@ namespace TuinCentrum_BL.Model
             Producten = producten; // Add the missing initialization of the Producten dictionary
             KostPrijs = BerekenTotaleKostPrijs();
         }
-
+        
         public void VoegProductToe(Product product, int aantal)
         {
             if (Producten.ContainsKey(product))

@@ -65,20 +65,20 @@ namespace TuinCentrumDL_SQL
         public bool HeeftOfferte(Offerte offerte)
         {
             string sql = @"
-                SELECT COUNT(*) 
-                FROM Offertes 
-                WHERE Datum = @Datum 
-                  AND KlantNummer = @KlantNummer
-                  AND Afhaal = @Afhaal
-                  AND Aanleg = @Aanleg
-                  AND Kostprijs = @Kostprijs";
+                    SELECT COUNT(*) 
+                    FROM Offertes 
+                    WHERE Datum = @Datum 
+                      AND KlantNummer = @KlantNummer
+                      AND Afhaal = @Afhaal
+                      AND Aanleg = @Aanleg
+                      AND Kostprijs = @Kostprijs";
 
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     connection.Open();
-                    command.Parameters.AddWithValue("@Datum", offerte.Datum);
+                    command.Parameters.AddWithValue("@Datum", offerte.Datum.ToString("yyyy-MM-dd"));
                     command.Parameters.AddWithValue("@KlantNummer", offerte.KlantNummer);
                     command.Parameters.AddWithValue("@Afhaal", offerte.Afhaal);
                     command.Parameters.AddWithValue("@Aanleg", offerte.Aanleg);
@@ -182,13 +182,13 @@ namespace TuinCentrumDL_SQL
         public void SchrijfOffertes(List<Offerte> offertes)
         {
             string sqlInsertOfferte = @"
-                INSERT INTO Offertes (Datum, KlantNummer, Afhaal, Aanleg, Kostprijs) 
-                OUTPUT INSERTED.Id
-                VALUES (@Datum, (SELECT Id FROM Klanten WHERE Id = @KlantNummer), @Afhaal, @Aanleg, @Kostprijs)";
+                    INSERT INTO Offertes (Datum, KlantNummer, Afhaal, Aanleg, Kostprijs) 
+                    OUTPUT INSERTED.Id
+                    VALUES (@Datum, (SELECT Id FROM Klanten WHERE Id = @KlantNummer), @Afhaal, @Aanleg, @Kostprijs)";
 
             string sqlInsertOfferteProducten = @"
-                INSERT INTO OfferteProducten (OfferteId, ProductId, Aantal) 
-                VALUES (@OfferteId, @ProductId, @Aantal)";
+                    INSERT INTO OfferteProducten (OfferteId, ProductId, Aantal) 
+                    VALUES (@OfferteId, @ProductId, @Aantal)";
 
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
@@ -199,7 +199,7 @@ namespace TuinCentrumDL_SQL
                     int offerteId;
                     using (SqlCommand command = new SqlCommand(sqlInsertOfferte, connection))
                     {
-                        command.Parameters.Add(new SqlParameter("@Datum", SqlDbType.DateTime)).Value = offerte.Datum;
+                        command.Parameters.Add(new SqlParameter("@Datum", SqlDbType.DateTime)).Value = offerte.Datum.ToString("yyyy-MM-dd");
                         command.Parameters.Add(new SqlParameter("@KlantNummer", SqlDbType.Int)).Value = offerte.KlantNummer;
                         command.Parameters.Add(new SqlParameter("@Afhaal", SqlDbType.Bit)).Value = offerte.Afhaal;
                         command.Parameters.Add(new SqlParameter("@Aanleg", SqlDbType.Bit)).Value = offerte.Aanleg;
@@ -229,8 +229,9 @@ namespace TuinCentrumDL_SQL
                 Console.WriteLine($"Inserted {offertes.Count} offertes.");
             }
         }
-        public void GetAllProducten(List<Product> producten)
+        public List<Product> GetAllProducten()
         {
+            List<Product> producten = new List<Product>();
             string sql = "SELECT * FROM Producten";
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
@@ -250,12 +251,36 @@ namespace TuinCentrumDL_SQL
                         }
                     }
                 }
+                return producten;
             }
         }
-        public Dictionary<int, Offerte> GetOffertes()
+        public List<Klant> GetKlanten()
         {
-            Dictionary<int, Offerte> offertes = new Dictionary<int, Offerte>();
+            List<Klant> klanten = new List<Klant>();
+            string sql = "SELECT * FROM Klanten";
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Klant klant = new Klant((int)reader["Id"],
+                                                      reader["Naam"].ToString(),
+                                                      reader["Adres"].ToString());
+                            klanten.Add(klant);
+                        }
+                    }
+                }
+                return klanten;
+            }
+        }
 
+        public List<Offerte> GetOffertes()
+        {
+            List<Offerte> offertes = new List<Offerte>();
             string sql = "SELECT * FROM Offertes";
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
@@ -266,23 +291,20 @@ namespace TuinCentrumDL_SQL
                     {
                         while (reader.Read())
                         {
-                            Offerte offerte = new Offerte();
-                            offerte.Id = (int)reader["Id"];
-                            offerte.Datum = (DateTime)reader["Datum"];
-                            offerte.KlantNummer = (int)reader["KlantNummer"];
-                            offerte.Afhaal = (bool)reader["Afhaal"];
-                            offerte.Aanleg = (bool)reader["Aanleg"];
-                            offerte.KostPrijs = (decimal)reader["Kostprijs"];
-                            
-
-                            offertes.Add(offerte.Id, offerte);
+                            Offerte offerte = new Offerte((int)reader["Id"],
+                                                          (DateTime)reader["Datum"],
+                                                          (int)reader["KlantNummer"],
+                                                          (bool)reader["Afhaal"],
+                                                          (bool)reader["Aanleg"],
+                                                          (decimal)reader["Kostprijs"]);
+                            offertes.Add(offerte);
                         }
                     }
                 }
+                return offertes;
             }
-
-            return offertes;
         }
+
     }
 }
 

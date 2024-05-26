@@ -3,6 +3,7 @@ using TuinCentrum_BL.Managers;
 using TuinCentrumDL_File;
 using TuinCentrumDL_SQL;
 
+
 namespace Program
 {
     internal class Program
@@ -21,8 +22,9 @@ namespace Program
             filepath = @"C:\Users\karel\Desktop\Ho Gent\Programmeren\EINDOPDRACHT!\tuin\offertes.txt";
             string filepath2 = @"C:\Users\karel\Desktop\Ho Gent\Programmeren\EINDOPDRACHT!\tuin\offerte_producten.txt";
             tuinCentrumManager.SchrijfOffertes(filepath, filepath2);
-
             Console.WriteLine("Connection string valid");
+            //TuinCentrum_UI.MainWindow mainWindow = new TuinCentrum_UI.MainWindow();
+
 
         }
     }
