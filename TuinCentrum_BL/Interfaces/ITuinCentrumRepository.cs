@@ -19,6 +19,7 @@ namespace TuinCentrum_BL.Interfaces
         List <Product> GetAllProducten();
         List <Klant> GetKlanten();
         List <Offerte> GetOffertes();
+        void AddOfferte(Offerte offerte);
 
 
 

@@ -52,7 +52,7 @@ namespace TuinCentrum_UI
 
         private void CreateOfferButton_Click(object sender, RoutedEventArgs e)
         {
-            var newOfferWindow = new TuinCentrum_UI.NewOfferWindow();
+            var newOfferWindow = new TuinCentrumUi.NewOfferWindow();
             newOfferWindow.ShowDialog();
         }
         

@@ -19,7 +19,7 @@ namespace TuinCentrum_BL.Model
         private bool aanleg;
         public bool Aanleg { get; set; }
         private Dictionary<Product, int> producten;
-        public Dictionary<Product, int> Producten { get; set; }
+        public Dictionary<Product, int> Producten { get; set; } = new Dictionary<Product, int>();
         private decimal kostprijs;
         public decimal KostPrijs { get; set; }
 

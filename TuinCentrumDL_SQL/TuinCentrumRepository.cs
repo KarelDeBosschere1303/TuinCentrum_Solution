@@ -304,9 +304,39 @@ namespace TuinCentrumDL_SQL
                 return offertes;
             }
         }
+        public void AddOfferte(Offerte offerte)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("INSERT INTO Offertes (KlantNummer, Datum, Afhaal, Aanleg, Kostprijs) OUTPUT INSERTED.Id VALUES (@KlantNummer, @Datum, @Afhaal, @Aanleg, @Kostprijs)", connection))
+                {
+                    command.Parameters.AddWithValue("@KlantNummer", offerte.KlantNummer);
+                    command.Parameters.AddWithValue("@Datum", offerte.Datum);
+                    command.Parameters.AddWithValue("@Afhaal", offerte.Afhaal);
+                    command.Parameters.AddWithValue("@Aanleg", offerte.Aanleg);
+                    command.Parameters.AddWithValue("@Kostprijs", offerte.KostPrijs);
+
+                    offerte.Id = (int)command.ExecuteScalar();
+                }
+
+                foreach (var product in offerte.Producten)
+                {
+                    using (SqlCommand insertCommand = new SqlCommand("INSERT INTO OfferteProducten (OfferteId, ProductId, Aantal) VALUES (@OfferteId, @ProductId, @Aantal)", connection))
+                    {
+                        insertCommand.Parameters.AddWithValue("@OfferteId", offerte.Id);
+                        insertCommand.Parameters.AddWithValue("@ProductId", product.Key.Id);
+                        insertCommand.Parameters.AddWithValue("@Aantal", product.Value);
+
+                        insertCommand.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+    }
 
     }
-}
+
 
 
 
