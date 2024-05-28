@@ -42,7 +42,9 @@
                     </Grid.RowDefinitions>
                     <TextBox x:Name="OfferteZoekTextBox" Width="200" Margin="10" Text="Zoek offerte..." Grid.Row="0" />
                     <Button Content="Zoek" Click="SearchOfferteButton_Click" Width="50" Margin="10"   HorizontalAlignment="Right"/>
-                    <Button Content="Create" Click="CreateOfferButton_Click" Width="50" Margin="10" Grid.Column="3"/> 
+                    <Button Content="Create" Click="CreateOfferButton_Click" Width="50" Margin="10" Grid.Column="3"/>
+                    <Button Content="Wijzig Offerte" Click="EditOfferButton_Click" Width="100" Margin="4" Grid.Column="0" HorizontalAlignment="Left"/>
+
                     <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
                         <ListView x:Name="OffertesListView" Margin="10" SelectionChanged="OffertesListView_SelectionChanged">
                             <ListView.View>

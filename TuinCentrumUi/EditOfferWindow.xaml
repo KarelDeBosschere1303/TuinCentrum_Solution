@@ -1,0 +1,48 @@
+﻿<Window x:Class="TuinCentrumUi.EditOfferWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wijzig Offerte" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="Offerte ID:" />
+            <TextBox x:Name="OfferteIdTextBox" Width="200" Margin="5" IsReadOnly="True"/>
+
+            <Label Content="Klantnummer:" />
+            <TextBox x:Name="KlantNummerTextBox" Width="200" Margin="5"/>
+
+            <Label Content="Datum:" />
+            <DatePicker x:Name="DatumDatePicker" Width="200" Margin="5" />
+
+            <Label Content="Afhaal:" />
+            <CheckBox x:Name="AfhaalCheckBox" Margin="5" />
+
+            <Label Content="Aanleg:" />
+            <CheckBox x:Name="AanlegCheckBox" Margin="5" />
+
+            <Label Content="Producten:" />
+            <DataGrid x:Name="ProductenDataGrid" AutoGenerateColumns="False" Width="750" Height="200" Margin="5" 
+                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Productnummer" Binding="{Binding ProductId}" IsReadOnly="True" Width="100"/>
+                    <DataGridTextColumn Header="Productnaam" Binding="{Binding Naam}" IsReadOnly="True" Width="100"/>
+                    <DataGridTextColumn Header="Wetenschappelijke Naam" Binding="{Binding WetenschappelijkeNaam}" IsReadOnly="True" Width="200"/>
+                    <DataGridTextColumn Header="Prijs" Binding="{Binding Prijs}" IsReadOnly="True" Width="100"/>
+                    <DataGridTextColumn Header="Beschrijving" Binding="{Binding Beschrijving}" IsReadOnly="True" Width="200"/>
+                    <DataGridTemplateColumn Header="Aantal">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Aantal, UpdateSourceTrigger=PropertyChanged}" Width="80"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Content="Bereken Totale Prijs" Click="CalculateTotalPriceButton_Click" Width="150" Margin="5"/>
+            <Label Content="Totale Prijs:" />
+            <TextBlock x:Name="TotalePrijsTextBlock" Margin="5" />
+
+            <Button Content="Opslaan" Click="SaveButton_Click" Width="100" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>

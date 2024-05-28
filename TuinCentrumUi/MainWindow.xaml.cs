@@ -6,6 +6,7 @@ using TuinCentrum_BL.Managers;
 using TuinCentrum_BL.Model;
 using TuinCentrumDL_File;
 using TuinCentrumDL_SQL;
+using TuinCentrumUi;
 
 
 
@@ -81,6 +82,23 @@ namespace TuinCentrum_UI
         //        var updateOfferWindow = new TuinCentrum_UI.NewOfferWindow(selectedOfferte);
         //        updateOfferWindow.ShowDialog();
         //    }
+        }
+        private void EditOfferButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Vraag de gebruiker om een offerte ID in te voeren
+            var inputDialog = new InputDialog("Voer het offerte ID in:", "Wijzig Offerte");
+            if (inputDialog.ShowDialog() == true)
+            {
+                if (int.TryParse(inputDialog.Answer, out int offerteId))
+                {
+                    var editOfferWindow = new EditOfferWindow(offerteId);
+                    editOfferWindow.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Ongeldig offerte ID.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
         }
 
         // Andere methoden...

@@ -333,10 +333,96 @@ namespace TuinCentrumDL_SQL
                 }
             }
         }
+        public void UpdateOfferte(Offerte offerte)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("UPDATE Offertes SET KlantNummer = @KlantNummer, Datum = @Datum, Afhaal = @Afhaal, Aanleg = @Aanleg, Kostprijs = @Kostprijs WHERE Id = @Id", connection))
+                {
+                    command.Parameters.AddWithValue("@Id", offerte.Id);
+                    command.Parameters.AddWithValue("@KlantNummer", offerte.KlantNummer);
+                    command.Parameters.AddWithValue("@Datum", offerte.Datum);
+                    command.Parameters.AddWithValue("@Afhaal", offerte.Afhaal);
+                    command.Parameters.AddWithValue("@Aanleg", offerte.Aanleg);
+                    command.Parameters.AddWithValue("@Kostprijs", offerte.KostPrijs);
+
+                    command.ExecuteNonQuery();
+                }
+
+                // Delete existing products and re-insert the updated ones
+                using (SqlCommand deleteCommand = new SqlCommand("DELETE FROM OfferteProducten WHERE OfferteId = @OfferteId", connection))
+                {
+                    deleteCommand.Parameters.AddWithValue("@OfferteId", offerte.Id);
+                    deleteCommand.ExecuteNonQuery();
+                }
+
+                foreach (var product in offerte.Producten)
+                {
+                    using (SqlCommand insertCommand = new SqlCommand("INSERT INTO OfferteProducten (OfferteId, ProductId, Aantal) VALUES (@OfferteId, @ProductId, @Aantal)", connection))
+                    {
+                        insertCommand.Parameters.AddWithValue("@OfferteId", offerte.Id);
+                        insertCommand.Parameters.AddWithValue("@ProductId", product.Key.Id);
+                        insertCommand.Parameters.AddWithValue("@Aantal", product.Value);
+
+                        insertCommand.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+        public Offerte GetOfferteById(int offerteId)
+        {
+            Offerte offerte = null;
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                connection.Open();
+                // Haal de offerte gegevens op
+                using (SqlCommand command = new SqlCommand("SELECT * FROM Offertes WHERE Id = @Id", connection))
+                {
+                    command.Parameters.AddWithValue("@Id", offerteId);
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            offerte = new Offerte
+                            {
+                                Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                                KlantNummer = reader.GetInt32(reader.GetOrdinal("KlantNummer")),
+                                Datum = reader.GetDateTime(reader.GetOrdinal("Datum")),
+                                Afhaal = reader.GetBoolean(reader.GetOrdinal("Afhaal")),
+                                Aanleg = reader.GetBoolean(reader.GetOrdinal("Aanleg")),
+                                KostPrijs = reader.GetDecimal(reader.GetOrdinal("Kostprijs"))
+                            };
+                        }
+                    }
+                }
+
+                // Haal de producten van de offerte op
+                if (offerte != null)
+                {
+                    using (SqlCommand command = new SqlCommand("SELECT OP.ProductId, OP.Aantal, P.Naam, P.WetenschappelijkeNaam, P.Prijs, P.Beschrijving FROM OfferteProducten OP JOIN Producten P ON OP.ProductId = P.Id WHERE OfferteId = @OfferteId", connection))
+                    {
+                        command.Parameters.AddWithValue("@OfferteId", offerteId);
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var product = new Product(
+                                    reader.GetInt32(reader.GetOrdinal("ProductId")),
+                                    reader.GetString(reader.GetOrdinal("Naam")),
+                                    reader.GetString(reader.GetOrdinal("WetenschappelijkeNaam")),
+                                    reader.GetDecimal(reader.GetOrdinal("Prijs")),
+                                    reader.GetString(reader.GetOrdinal("Beschrijving"))
+                                );
+                                var aantal = reader.GetInt32(reader.GetOrdinal("Aantal"));
+                                offerte.Producten.Add(product, aantal);
+                            }
+                        }
+                    }
+                }
+            }
+            return offerte;
+        }
     }
-
-    }
-
-
-
+}
 

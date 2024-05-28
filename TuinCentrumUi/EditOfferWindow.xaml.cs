@@ -11,37 +11,53 @@ using TuinCentrumUi.Viewmodels;
 
 namespace TuinCentrumUi
 {
-    public partial class NewOfferWindow : Window
+    public partial class EditOfferWindow : Window
     {
         private readonly TuinCentrumManager tuinCentrumManager;
         private readonly ITuinCentrumRepository tuinCentrumRepository;
         private readonly IFileProcessor fileProcessor;
-        public Offerte NieuweOfferte { get; private set; }
+        public Offerte GewijzigdeOfferte { get; private set; }
         private Dictionary<Product, int> productAantallen = new Dictionary<Product, int>();
 
-        public NewOfferWindow()
+        public EditOfferWindow(int offerteId)
         {
             InitializeComponent();
             string connectionstring = @"Data Source=Workmate\SQLEXPRESS;Initial Catalog=Tuincetrum_B;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
             tuinCentrumRepository = new TuinCentrumRepository(connectionstring);
             fileProcessor = new FileProcessor(tuinCentrumRepository);
             tuinCentrumManager = new TuinCentrumManager(fileProcessor, tuinCentrumRepository);
-            LoadData();
+            LoadData(offerteId);
         }
 
-        private void LoadData()
+        private void LoadData(int offerteId)
         {
-            var producten = tuinCentrumRepository.GetAllProducten();
-            var productenViewModel = producten.Select(p => new ProductOfferteViewModel
+            var offerte = tuinCentrumRepository.GetOfferteById(offerteId);
+            if (offerte != null)
             {
-                ProductId = p.Id,
-                Naam = p.Naam,
-                WetenschappelijkeNaam = p.WetenschappelijkeNaam,
-                Prijs = p.Prijs,
-                Beschrijving = p.Beschrijving,
-                Aantal = 0
-            }).ToList();
-            ProductenDataGrid.ItemsSource = productenViewModel;
+                OfferteIdTextBox.Text = offerte.Id.ToString();
+                KlantNummerTextBox.Text = offerte.KlantNummer.ToString();
+                DatumDatePicker.SelectedDate = offerte.Datum;
+                AfhaalCheckBox.IsChecked = offerte.Afhaal;
+                AanlegCheckBox.IsChecked = offerte.Aanleg;
+
+                var productenViewModel = offerte.Producten.Select(p => new ProductOfferteViewModel
+                {
+                    ProductId = p.Key.Id,
+                    Naam = p.Key.Naam,
+                    WetenschappelijkeNaam = p.Key.WetenschappelijkeNaam,
+                    Prijs = p.Key.Prijs,
+                    Beschrijving = p.Key.Beschrijving,
+                    Aantal = p.Value
+                }).ToList();
+                ProductenDataGrid.ItemsSource = productenViewModel;
+
+                CalculateTotalPrice();
+            }
+            else
+            {
+                MessageBox.Show("Offerte niet gevonden.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                Close();
+            }
         }
 
         private decimal CalculateTotalPrice()
@@ -51,51 +67,10 @@ namespace TuinCentrumUi
             {
                 totalPrice += product.Prijs * product.Aantal;
             }
-
-            // Kortingen toepassen
-            if (totalPrice > 5000)
-            {
-                totalPrice *= 0.90m; // 10% korting
-            }
-            else if (totalPrice > 2000)
-            {
-                totalPrice *= 0.95m; // 5% korting
-            }
-
-            // Leveringskosten toepassen
-            if (!(AfhaalCheckBox.IsChecked ?? false)) // Als het niet afhaal is, dus levering
-            {
-                if (totalPrice < 500)
-                {
-                    totalPrice += 100; // Vaste kost van 100 euro voor levering onder 500 euro
-                }
-                else if (totalPrice < 1000)
-                {
-                    totalPrice += 50; // Vaste kost van 50 euro voor levering tussen 500 en 1000 euro
-                }
-                // Geen extra kosten voor levering boven 1000 euro
-            }
-
-            // Aanlegkosten toepassen
-            if (AanlegCheckBox.IsChecked ?? false) // Als aanleg is geselecteerd
-            {
-                if (totalPrice > 5000)
-                {
-                    totalPrice *= 1.05m; // 5% kosten
-                }
-                else if (totalPrice > 2000)
-                {
-                    totalPrice *= 1.10m; // 10% kosten
-                }
-                else
-                {
-                    totalPrice *= 1.15m; // 15% kosten
-                }
-            }
-
             TotalePrijsTextBlock.Text = totalPrice.ToString("C");
             return totalPrice;
         }
+
         private void CalculateTotalPriceButton_Click(object sender, RoutedEventArgs e)
         {
             CalculateTotalPrice();
@@ -122,8 +97,9 @@ namespace TuinCentrumUi
                     }
                 }
 
-                NieuweOfferte = new Offerte
+                GewijzigdeOfferte = new Offerte
                 {
+                    Id = int.Parse(OfferteIdTextBox.Text),
                     KlantNummer = klantNummer,
                     Datum = DatumDatePicker.SelectedDate ?? DateTime.Now,
                     Afhaal = AfhaalCheckBox.IsChecked ?? false,
@@ -132,16 +108,16 @@ namespace TuinCentrumUi
                     KostPrijs = CalculateTotalPrice() // Bereken en stel de totale prijs in
                 };
 
-                // Save the new offer to the database
+                // Save the updated offer to the database
                 try
                 {
-                    tuinCentrumRepository.AddOfferte(NieuweOfferte);
-                    MessageBox.Show("Offerte succesvol aangemaakt!", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+                    tuinCentrumRepository.UpdateOfferte(GewijzigdeOfferte);
+                    MessageBox.Show("Offerte succesvol bijgewerkt!", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
                     this.Close();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Fout bij het opslaan van de offerte: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"Fout bij het bijwerken van de offerte: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
