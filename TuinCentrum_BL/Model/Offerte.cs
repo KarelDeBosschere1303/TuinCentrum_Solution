@@ -1,62 +1,77 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TuinCentrum_BL.Model
 {
     public class Offerte
     {
-        private int id;
+        public string KlantNaam => Klant?.Naam;
         public int Id { get; set; }
+
         private DateTime datum;
-        public DateTime Datum { get; set; }
-        private int klantnummer;
-        public int KlantNummer { get; set; }
+        public DateTime Datum
+        {
+            get => datum;
+            set
+            {
+                if (value == default)
+                    throw new ArgumentException("Datum mag niet leeg zijn.");
+                datum = value;
+            }
+        }
+
+        
+        public Klant Klant
+        { get; set; }
+
         private bool afhaal;
-        public bool Afhaal { get; set; }
+        public bool Afhaal
+        {
+            get => afhaal;
+            set => afhaal = value;
+        }
+
         private bool aanleg;
-        public bool Aanleg { get; set; }
+        public bool Aanleg
+        {
+            get => aanleg;
+            set => aanleg = value;
+        }
+
         private Dictionary<Product, int> producten;
-        public Dictionary<Product, int> Producten { get; set; } = new Dictionary<Product, int>();
-        private decimal kostprijs;
+        public Dictionary<Product, int> Producten
+        {
+            get => producten;
+            set => producten = value ?? throw new ArgumentNullException(nameof(Producten));
+        }
+
+        
         public decimal KostPrijs { get; set; }
+        
+        public Offerte()
+        {
+            Producten = new Dictionary<Product, int>();
+        }
 
-        public Offerte() { }
-
-        public Offerte(int id, DateTime datum, int klantnummer, bool afhaal, bool aanleg, decimal kostprijs)
+        public Offerte(int id, DateTime datum, Klant klant, bool afhaal, bool aanleg, decimal kostprijs)
         {
             Id = id;
             Datum = datum;
-            KlantNummer = klantnummer;
+            Klant = klant;
             Afhaal = afhaal;
             Aanleg = aanleg;
             KostPrijs = kostprijs;
-
+            Producten = new Dictionary<Product, int>();
         }
 
-        public Offerte(DateTime datum, int klantNummer, bool afhaal, bool aanleg,Dictionary<Product,int> producten)
+        public Offerte(DateTime datum, Klant klant, bool afhaal, bool aanleg, Dictionary<Product, int> producten)
         {
-            Id = id;
             Datum = datum;
-            KlantNummer = klantNummer;
+            Klant = klant;
             Afhaal = afhaal;
             Aanleg = aanleg;
-            Producten = producten; // Add the missing initialization of the Producten dictionary
+            Producten = producten;
             KostPrijs = BerekenTotaleKostPrijs();
-        }
-        
-        public void VoegProductToe(Product product, int aantal)
-        {
-            if (Producten.ContainsKey(product))
-            {
-                Producten[product] += aantal;
-            }
-            else
-            {
-                Producten.Add(product, aantal);
-            }
         }
 
         public decimal BerekenTotaleKostPrijs()
@@ -136,9 +151,29 @@ namespace TuinCentrum_BL.Model
 
             return aanlegKosten;
         }
-    }
 
-    
-        
-     
+        public void VoegProductToe(Product product, int aantal)
+        {
+            if (product == null) throw new ArgumentNullException(nameof(product));
+            if (Producten.ContainsKey(product))
+            {
+                Producten[product] += aantal;
+            }
+            else
+            {
+                Producten[product] = aantal;
+            }
+            KostPrijs = BerekenTotaleKostPrijs();
+        }
+
+        public void VerwijderProduct(Product product)
+        {
+            if (product == null) throw new ArgumentNullException(nameof(product));
+            if (Producten.ContainsKey(product))
+            {
+                Producten.Remove(product);
+            }
+            KostPrijs = BerekenTotaleKostPrijs();
+        }
+    }
 }

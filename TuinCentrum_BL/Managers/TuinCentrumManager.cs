@@ -14,12 +14,14 @@ namespace TuinCentrum_BL.Managers
 {
     public class TuinCentrumManager
     {
+        
         private IFileProcessor _fileProcessor;
         private ITuinCentrumRepository _tuinCentrumRepository;
-        public TuinCentrumManager(IFileProcessor fileProcessor, ITuinCentrumRepository tuinCentrumRepository)
+        public TuinCentrumManager(ITuinCentrumRepository tuinCentrumRepository,IFileProcessor fileProcessor)
         {
-            _fileProcessor = fileProcessor;
             _tuinCentrumRepository = tuinCentrumRepository;
+            _fileProcessor = fileProcessor;
+
         }
         public void SchrijfKlanten(string filename)
         {
@@ -58,6 +60,51 @@ namespace TuinCentrum_BL.Managers
                 }
             }
         }
+        public void AddOfferte(Offerte offerte)
+        {
+            if (!_tuinCentrumRepository.HeeftOfferte(offerte))
+            {
+                _tuinCentrumRepository.AddOfferte(offerte);
+            }
+            else
+            {
+                throw new DomeinException("Offerte bestaat al");
+            }
+        }
+        public void UpdateOfferte(Offerte offerte)
+        {
+            if (_tuinCentrumRepository.HeeftOfferte(offerte))
+            {
+                _tuinCentrumRepository.UpdateOfferte(offerte);
+            }
+            else
+            {
+                throw new DomeinException("Offerte bestaat niet");
+            }
+        }
+
+        public List<Product> GetAllProducten()
+        {
+            return _tuinCentrumRepository.GetAllProducten();
+        }
+        public Dictionary<int, Klant> GetKlanten()
+        {
+            return _tuinCentrumRepository.GetKlanten();
+        }
+        public Offerte GetOfferteSById(int offerteId)
+        {
+            return _tuinCentrumRepository.GetOfferteSById(offerteId);
+        }
+
+       public decimal BerekenTotaleKostPrijs(Offerte offerte)
+        {
+            return offerte.BerekenTotaleKostPrijs();
+        }
+        public Klant GetKlantById(int klantId)
+        {
+            return _tuinCentrumRepository.GetKlantById(klantId);
+        }
+
     }
 }
 

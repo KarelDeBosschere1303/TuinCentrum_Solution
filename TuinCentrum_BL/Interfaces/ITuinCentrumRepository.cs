@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TuinCentrum_BL.Model;
 
 namespace TuinCentrum_BL.Interfaces
@@ -16,14 +12,12 @@ namespace TuinCentrum_BL.Interfaces
         void SchrijfProducten(List<Product> producten);
         void SchrijfOffertes(List<Offerte> offertes);
         Product GetProductById(int productId);
-        List <Product> GetAllProducten();
-        List <Klant> GetKlanten();
-        List <Offerte> GetOffertes();
+        List<Product> GetAllProducten();
+        Dictionary<int,Klant> GetKlanten();
+        
         void AddOfferte(Offerte offerte);
         void UpdateOfferte(Offerte offerte);
-        Offerte GetOfferteById(int offerteId);
-
-
-
+        Offerte GetOfferteSById(int offerteId);
+        Klant GetKlantById(int klantId);
     }
 }

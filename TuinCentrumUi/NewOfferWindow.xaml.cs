@@ -7,135 +7,173 @@ using TuinCentrum_BL.Managers;
 using TuinCentrum_BL.Model;
 using TuinCentrumDL_File;
 using TuinCentrumDL_SQL;
-using TuinCentrumUi.Viewmodels;
 
 namespace TuinCentrumUi
 {
     public partial class NewOfferWindow : Window
     {
         private readonly TuinCentrumManager tuinCentrumManager;
-        private readonly ITuinCentrumRepository tuinCentrumRepository;
-        private readonly IFileProcessor fileProcessor;
+        private List<ProductOfferteViewModel> productViewModels;
+        private List<ProductOfferteViewModel> geselecteerdeProductenViewModels;
+
         public Offerte NieuweOfferte { get; private set; }
-        private Dictionary<Product, int> productAantallen = new Dictionary<Product, int>();
 
         public NewOfferWindow()
         {
             InitializeComponent();
             string connectionstring = @"Data Source=Workmate\SQLEXPRESS;Initial Catalog=Tuincetrum_B;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-            tuinCentrumRepository = new TuinCentrumRepository(connectionstring);
-            fileProcessor = new FileProcessor(tuinCentrumRepository);
-            tuinCentrumManager = new TuinCentrumManager(fileProcessor, tuinCentrumRepository);
+            var tuinCentrumRepository = new TuinCentrumRepository(connectionstring);
+            IFileProcessor fileProcessor = new FileProcessor(tuinCentrumRepository);
+            tuinCentrumManager = new TuinCentrumManager(tuinCentrumRepository, fileProcessor);
             LoadData();
         }
 
         private void LoadData()
         {
-            var producten = tuinCentrumRepository.GetAllProducten();
-            var productenViewModel = producten.Select(p => new ProductOfferteViewModel
+            var producten = tuinCentrumManager.GetAllProducten();
+            productViewModels = producten.Select(p => new ProductOfferteViewModel
             {
-                ProductId = p.Id,
+                Id = p.Id,
                 Naam = p.Naam,
                 WetenschappelijkeNaam = p.WetenschappelijkeNaam,
                 Prijs = p.Prijs,
                 Beschrijving = p.Beschrijving,
                 Aantal = 0
             }).ToList();
-            ProductenDataGrid.ItemsSource = productenViewModel;
+
+            geselecteerdeProductenViewModels = new List<ProductOfferteViewModel>();
+
+            ProductenDataGrid.ItemsSource = productViewModels;
+            GeselecteerdeProductenDataGrid.ItemsSource = geselecteerdeProductenViewModels;
         }
 
-        private decimal CalculateTotalPrice()
+        private void SearchProductButton_Click(object sender, RoutedEventArgs e)
         {
-            decimal totalPrice = 0;
-            foreach (var product in ProductenDataGrid.ItemsSource as List<ProductOfferteViewModel>)
-            {
-                totalPrice += product.Prijs * product.Aantal;
-            }
+            var zoekTerm = ProductZoekTextBox.Text.ToLower();
+            var gefilterdeProducten = productViewModels
+                .Where(p => p.Naam.ToLower().Contains(zoekTerm) || p.WetenschappelijkeNaam.ToLower().Contains(zoekTerm))
+                .ToList();
 
-            // Kortingen toepassen
-            if (totalPrice > 5000)
-            {
-                totalPrice *= 0.90m; // 10% korting
-            }
-            else if (totalPrice > 2000)
-            {
-                totalPrice *= 0.95m; // 5% korting
-            }
-
-            // Leveringskosten toepassen
-            if (!(AfhaalCheckBox.IsChecked ?? false)) // Als het niet afhaal is, dus levering
-            {
-                if (totalPrice < 500)
-                {
-                    totalPrice += 100; // Vaste kost van 100 euro voor levering onder 500 euro
-                }
-                else if (totalPrice < 1000)
-                {
-                    totalPrice += 50; // Vaste kost van 50 euro voor levering tussen 500 en 1000 euro
-                }
-                // Geen extra kosten voor levering boven 1000 euro
-            }
-
-            // Aanlegkosten toepassen
-            if (AanlegCheckBox.IsChecked ?? false) // Als aanleg is geselecteerd
-            {
-                if (totalPrice > 5000)
-                {
-                    totalPrice *= 1.05m; // 5% kosten
-                }
-                else if (totalPrice > 2000)
-                {
-                    totalPrice *= 1.10m; // 10% kosten
-                }
-                else
-                {
-                    totalPrice *= 1.15m; // 15% kosten
-                }
-            }
-
-            TotalePrijsTextBlock.Text = totalPrice.ToString("C");
-            return totalPrice;
+            ProductenDataGrid.ItemsSource = gefilterdeProducten;
         }
-        private void CalculateTotalPriceButton_Click(object sender, RoutedEventArgs e)
+
+        private void UpdateTotalPrice()
         {
-            CalculateTotalPrice();
+            var geselecteerdeProducten = geselecteerdeProductenViewModels
+                .Where(p => p.Aantal > 0)
+                .ToDictionary(p => new Product(p.Id, p.Naam, p.WetenschappelijkeNaam, p.Prijs, p.Beschrijving), p => p.Aantal);
+
+            var nieuweOfferte = new Offerte
+            {
+                Klant = new Klant { Id = int.Parse(KlantNummerTextBox.Text) },
+                Datum = DatumDatePicker.SelectedDate ?? DateTime.Now,
+                Afhaal = AfhaalCheckBox.IsChecked ?? false,
+                Aanleg = AanlegCheckBox.IsChecked ?? false,
+                Producten = geselecteerdeProducten
+            };
+
+            decimal totalePrijs = nieuweOfferte.BerekenTotaleKostPrijs();
+            TotalePrijsTextBlock.Text = totalePrijs.ToString("C");
+        }
+
+        private void VoegProductToeButton_Click(object sender, RoutedEventArgs e)
+        {
+            var geselecteerdeProducten = ProductenDataGrid.SelectedItems.Cast<ProductOfferteViewModel>().ToList();
+
+            if (geselecteerdeProducten != null && geselecteerdeProducten.Count > 0)
+            {
+                foreach (var product in geselecteerdeProducten)
+                {
+                    string aantalString = Microsoft.VisualBasic.Interaction.InputBox($"Hoeveel {product.Naam} wil je toevoegen?", "Aantal Invoeren", "1");
+                    if (int.TryParse(aantalString, out int aantal) && aantal > 0)
+                    {
+                        var existingProduct = geselecteerdeProductenViewModels.FirstOrDefault(p => p.Id == product.Id);
+                        if (existingProduct != null)
+                        {
+                            existingProduct.Aantal += aantal;
+                        }
+                        else
+                        {
+                            geselecteerdeProductenViewModels.Add(new ProductOfferteViewModel
+                            {
+                                Id = product.Id,
+                                Naam = product.Naam,
+                                WetenschappelijkeNaam = product.WetenschappelijkeNaam,
+                                Prijs = product.Prijs,
+                                Beschrijving = product.Beschrijving,
+                                Aantal = aantal
+                            });
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ongeldig aantal. Probeer het opnieuw.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+
+                GeselecteerdeProductenDataGrid.ItemsSource = null;
+                GeselecteerdeProductenDataGrid.ItemsSource = geselecteerdeProductenViewModels;
+                UpdateTotalPrice();
+            }
+            else
+            {
+                MessageBox.Show("Selecteer een product om toe te voegen.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void VerwijderGeselecteerdeProductenButton_Click(object sender, RoutedEventArgs e)
+        {
+            var geselecteerdeProducten = GeselecteerdeProductenDataGrid.SelectedItems.Cast<ProductOfferteViewModel>().ToList();
+
+            if (geselecteerdeProducten != null)
+            {
+                foreach (var product in geselecteerdeProducten)
+                {
+                    geselecteerdeProductenViewModels.Remove(product);
+                }
+
+                GeselecteerdeProductenDataGrid.ItemsSource = null;
+                GeselecteerdeProductenDataGrid.ItemsSource = geselecteerdeProductenViewModels;
+                UpdateTotalPrice();
+            }
+            else
+            {
+                MessageBox.Show("Selecteer een product om te verwijderen.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             if (int.TryParse(KlantNummerTextBox.Text, out int klantNummer))
             {
-                var geselecteerdeProducten = new Dictionary<Product, int>();
-
-                foreach (var productViewModel in ProductenDataGrid.ItemsSource as List<ProductOfferteViewModel>)
+                // Check if the customer exists
+                Klant klant = tuinCentrumManager.GetKlantById(klantNummer);
+                if (klant == null)
                 {
-                    if (productViewModel.Aantal > 0)
-                    {
-                        var product = new Product(
-                            productViewModel.ProductId,
-                            productViewModel.Naam,
-                            productViewModel.WetenschappelijkeNaam,
-                            productViewModel.Prijs,
-                            productViewModel.Beschrijving
-                        );
-                        geselecteerdeProducten.Add(product, productViewModel.Aantal);
-                    }
+                    // If the customer does not exist, create a new customer
+                    klant = new Klant { Id = klantNummer };
                 }
+
+                var geselecteerdeProducten = geselecteerdeProductenViewModels
+                    .Where(p => p.Aantal > 0)
+                    .ToDictionary(p => new Product(p.Id, p.Naam, p.WetenschappelijkeNaam, p.Prijs, p.Beschrijving), p => p.Aantal);
 
                 NieuweOfferte = new Offerte
                 {
-                    KlantNummer = klantNummer,
+                    Klant = klant,
                     Datum = DatumDatePicker.SelectedDate ?? DateTime.Now,
                     Afhaal = AfhaalCheckBox.IsChecked ?? false,
                     Aanleg = AanlegCheckBox.IsChecked ?? false,
-                    Producten = geselecteerdeProducten,
-                    KostPrijs = CalculateTotalPrice() // Bereken en stel de totale prijs in
+                    Producten = geselecteerdeProducten
                 };
+
+                // Bereken de totale kostprijs
+                NieuweOfferte.KostPrijs = NieuweOfferte.BerekenTotaleKostPrijs();
 
                 // Save the new offer to the database
                 try
                 {
-                    tuinCentrumRepository.AddOfferte(NieuweOfferte);
+                    tuinCentrumManager.AddOfferte(NieuweOfferte);
                     MessageBox.Show("Offerte succesvol aangemaakt!", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
                     this.Close();
                 }
@@ -149,5 +187,15 @@ namespace TuinCentrumUi
                 MessageBox.Show("Vul alstublieft een geldig klantnummer in.", "Ongeldig klantnummer", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+    }
+
+    public class ProductOfferteViewModel
+    {
+        public int Id { get; set; }
+        public string Naam { get; set; }
+        public string WetenschappelijkeNaam { get; set; }
+        public decimal Prijs { get; set; }
+        public string Beschrijving { get; set; }
+        public int Aantal { get; set; }
     }
 }

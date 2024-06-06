@@ -14,16 +14,16 @@ namespace Program
 
             ITuinCentrumRepository tuinCentrumRepository = new TuinCentrumRepository(connectionstring);
             IFileProcessor fileProcessor = new FileProcessor(tuinCentrumRepository);
-            TuinCentrumManager tuinCentrumManager = new TuinCentrumManager(fileProcessor, tuinCentrumRepository);
+            TuinCentrumManager tuinCentrumManager = new TuinCentrumManager(tuinCentrumRepository,fileProcessor);
             string filepath = @"C:\Users\karel\Desktop\Ho Gent\Programmeren\EINDOPDRACHT!\tuin\klanten.txt";
-            //tuinCentrumManager.SchrijfKlanten(filepath);
+            tuinCentrumManager.SchrijfKlanten(filepath);
             filepath = @"C:\Users\karel\Desktop\Ho Gent\Programmeren\EINDOPDRACHT!\tuin\producten.txt";
-            //tuinCentrumManager.SchrijfProducten(filepath);
+            tuinCentrumManager.SchrijfProducten(filepath);
             filepath = @"C:\Users\karel\Desktop\Ho Gent\Programmeren\EINDOPDRACHT!\tuin\offertes.txt";
             string filepath2 = @"C:\Users\karel\Desktop\Ho Gent\Programmeren\EINDOPDRACHT!\tuin\offerte_producten.txt";
             tuinCentrumManager.SchrijfOffertes(filepath, filepath2);
             Console.WriteLine("Connection string valid");
-            //TuinCentrum_UI.MainWindow mainWindow = new TuinCentrum_UI.MainWindow();
+            
 
 
         }

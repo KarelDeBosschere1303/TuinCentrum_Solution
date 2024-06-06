@@ -13,7 +13,7 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <TextBox x:Name="KlantZoekTextBox" Width="200" Margin="10" Text="Zoek klant..." Grid.Row="0" />
+                    <TextBox x:Name="KlantZoekTextBox" Width="200" Margin="10" Grid.Row="0" />
                     <Button Content="Zoek" Click="SearchKlantButton_Click" Width="100" Margin="10" Grid.Row="0" HorizontalAlignment="Right"/>
                     <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
                         <ListView x:Name="KlantenListView" Margin="10" SelectionChanged="KlantenListView_SelectionChanged">
@@ -22,6 +22,7 @@
                                     <GridViewColumn Header="Klantnummer" DisplayMemberBinding="{Binding Id}" Width="100"/>
                                     <GridViewColumn Header="Naam" DisplayMemberBinding="{Binding Naam}" Width="200"/>
                                     <GridViewColumn Header="Adres" DisplayMemberBinding="{Binding Adres}" Width="300"/>
+                                    <GridViewColumn Header="Aantal Offertes" DisplayMemberBinding="{Binding AantalOffertes}" Width="100"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>
@@ -38,20 +39,18 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="Auto" />
-                        
                     </Grid.RowDefinitions>
-                    <TextBox x:Name="OfferteZoekTextBox" Width="200" Margin="10" Text="Zoek offerte..." Grid.Row="0" />
-                    <Button Content="Zoek" Click="SearchOfferteButton_Click" Width="50" Margin="10"   HorizontalAlignment="Right"/>
+                    <TextBox x:Name="OfferteZoekTextBox" Width="200" Margin="10" Grid.Row="0" />
+                    <Button Content="Zoek" Click="SearchOfferteButton_Click" Width="50" Margin="10" HorizontalAlignment="Right"/>
                     <Button Content="Create" Click="CreateOfferButton_Click" Width="50" Margin="10" Grid.Column="3"/>
                     <Button Content="Wijzig Offerte" Click="EditOfferButton_Click" Width="100" Margin="4" Grid.Column="0" HorizontalAlignment="Left"/>
-
                     <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
                         <ListView x:Name="OffertesListView" Margin="10" SelectionChanged="OffertesListView_SelectionChanged">
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn Header="Offertenummer" DisplayMemberBinding="{Binding Id}" Width="100"/>
                                     <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding Datum}" Width="100"/>
-                                    <GridViewColumn Header="KlantNummer" DisplayMemberBinding="{Binding KlantNummer}" Width="100"/>
+                                    <GridViewColumn Header="KlantNaam" DisplayMemberBinding="{Binding KlantNaam}" Width="200"/>
                                     <GridViewColumn Header="Afhaal" DisplayMemberBinding="{Binding Afhaal}" Width="100"/>
                                     <GridViewColumn Header="Aanleg" DisplayMemberBinding="{Binding Aanleg}" Width="100"/>
                                     <GridViewColumn Header="Totale Prijs" DisplayMemberBinding="{Binding KostPrijs}" Width="100"/>
