@@ -64,7 +64,7 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button Content="Voeg Geselecteerde Producten Toe" Click="VoegProductToeButton_Click" Width="200" Margin="5" Grid.Row="9" Grid.Column="0"/>
+        <Button Content="Voeg Geselecteerde Producten Toe" Click="VoegProductToeButton_Click" Width="200" Margin="5" Grid.Row="7" Grid.Column="1"/>
         <Button Content="Verwijder Geselecteerde Producten" Click="VerwijderGeselecteerdeProductenButton_Click" Width="200" Margin="5" Grid.Row="9" Grid.Column="1"/>
 
         <Label Content="Totale Prijs:" Grid.Row="10" Grid.Column="0"/>

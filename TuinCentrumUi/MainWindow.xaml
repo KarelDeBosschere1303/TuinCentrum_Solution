@@ -50,7 +50,7 @@
                                 <GridView>
                                     <GridViewColumn Header="Offertenummer" DisplayMemberBinding="{Binding Id}" Width="100"/>
                                     <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding Datum}" Width="100"/>
-                                    <GridViewColumn Header="KlantNaam" DisplayMemberBinding="{Binding KlantNaam}" Width="200"/>
+                                    <GridViewColumn Header="KlantNaam" DisplayMemberBinding="{Binding Klant.Naam}" Width="200"/>
                                     <GridViewColumn Header="Afhaal" DisplayMemberBinding="{Binding Afhaal}" Width="100"/>
                                     <GridViewColumn Header="Aanleg" DisplayMemberBinding="{Binding Aanleg}" Width="100"/>
                                     <GridViewColumn Header="Totale Prijs" DisplayMemberBinding="{Binding KostPrijs}" Width="100"/>

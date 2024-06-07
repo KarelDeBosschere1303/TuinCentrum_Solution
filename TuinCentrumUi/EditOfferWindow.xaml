@@ -10,10 +10,10 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
@@ -51,10 +51,11 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Label Content="Zoek Product:" Grid.Row="7" Grid.Column="0"/>
-        <TextBox x:Name="ZoekProductTextBox" Width="200" Margin="5" Grid.Row="7" Grid.Column="1"/>
-        <Button Content="Zoek" Click="ZoekProductButton_Click" Width="100" Margin="5" Grid.Row="7" Grid.Column="2"/>
-        <Button Content="Verwijder Geselecteerde Producten" Click="VerwijderGeselecteerdeProductenButton_Click" Width="200" Margin="5" Grid.Row="8" Grid.Column="2"/>
+        <Button Content="Verwijder Geselecteerde Producten" Click="VerwijderGeselecteerdeProductenButton_Click" Width="200" Margin="5" Grid.Row="7" Grid.Column="1"/>
+
+        <Label Content="Zoek Product:" Grid.Row="8" Grid.Column="0"/>
+        <TextBox x:Name="ZoekProductTextBox" Width="200" Margin="5" Grid.Row="8" Grid.Column="1"/>
+        <Button Content="Zoek" Click="ZoekProductButton_Click" Width="100" Margin="5" Grid.Row="8" Grid.Column="2"/>
 
         <DataGrid x:Name="AlleProductenDataGrid" AutoGenerateColumns="False" Width="850" Height="150" Margin="5"
                   VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" SelectionMode="Extended" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3">
@@ -66,10 +67,7 @@
                 <DataGridTextColumn Header="Beschrijving" Binding="{Binding Beschrijving}" IsReadOnly="True" Width="200"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Voeg Geselecteerde Producten Toe" Click="VoegProductToeButton_Click" Width="200" Margin="5" Grid.Row="10" Grid.Column="0"/>
-
-        <Button Content="Bereken Totale Prijs" Click="CalculateTotalPriceButton_Click" Width="150" Margin="5" Grid.Row="11" Grid.Column="0"/>
-        <Label Content="" Grid.Row="11" Grid.Column="1"/>
+        <Button Content="Voeg Geselecteerde Producten Toe" Click="VoegProductToeButton_Click" Width="200" Margin="5" Grid.Row="10" Grid.Column="1"/>
         <TextBlock x:Name="TotalePrijsTextBlock" Margin="5" Grid.Row="11" Grid.Column="1"/>
 
         <Button Content="Opslaan" Click="SaveButton_Click" Width="100" Margin="5" Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="3"/>

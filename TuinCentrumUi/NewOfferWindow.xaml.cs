@@ -25,6 +25,7 @@ namespace TuinCentrumUi
             var tuinCentrumRepository = new TuinCentrumRepository(connectionstring);
             IFileProcessor fileProcessor = new FileProcessor(tuinCentrumRepository);
             tuinCentrumManager = new TuinCentrumManager(tuinCentrumRepository, fileProcessor);
+            
             LoadData();
         }
 
@@ -40,7 +41,7 @@ namespace TuinCentrumUi
                 Beschrijving = p.Beschrijving,
                 Aantal = 0
             }).ToList();
-
+           
             geselecteerdeProductenViewModels = new List<ProductOfferteViewModel>();
 
             ProductenDataGrid.ItemsSource = productViewModels;

@@ -5,7 +5,7 @@ namespace TuinCentrum_BL.Model
 {
     public class Offerte
     {
-        public string KlantNaam => Klant?.Naam;
+        
         public int Id { get; set; }
 
         private DateTime datum;
