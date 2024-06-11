@@ -95,7 +95,6 @@ namespace TuinCentrumDL_SQL
                     foreach (Klant klant in klanten)
                     {
                         command.Parameters["@Naam"].Value = klant.Naam;
-                        command.Parameters["@Adres"].Value = klant.Adres;
                         command.ExecuteNonQuery();
                     }
                 }

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
 using System.Windows;
 using System.Windows.Controls;
 using TuinCentrum_BL.Interfaces;
@@ -9,6 +8,7 @@ using TuinCentrum_BL.Model;
 using TuinCentrumDL_File;
 using TuinCentrumDL_SQL;
 using TuinCentrumUi;
+using TuinCentrumUi.Viewmodels;
 
 namespace TuinCentrum_UI
 {
@@ -21,10 +21,10 @@ namespace TuinCentrum_UI
         public MainWindow()
         {
             InitializeComponent();
-            string connectionstring = @"Data Source=Workmate\SQLEXPRESS;Initial Catalog=Tuincetrum_B;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-            ITuinCentrumRepository tuinCentrumRepository = new TuinCentrumRepository(connectionstring);
+            string connectionString = ConfigurationManager.ConnectionStrings["TuinCentrumDB"].ConnectionString;
+            ITuinCentrumRepository tuinCentrumRepository = new TuinCentrumRepository(connectionString);
             IFileProcessor fileProcessor = new FileProcessor(tuinCentrumRepository);
-            tuinCentrumManager = new TuinCentrumManager(tuinCentrumRepository,fileProcessor);
+            tuinCentrumManager = new TuinCentrumManager(tuinCentrumRepository, fileProcessor);
             LoadData();
         }
 
@@ -42,7 +42,7 @@ namespace TuinCentrum_UI
         {
             string zoekTerm = KlantZoekTextBox.Text.ToLower();
             var gefilterdeKlanten = allKlanten
-                .Where(k => k.Naam.ToLower().Contains(zoekTerm) || k.Id.ToString().Contains(zoekTerm))
+                .Where(k => k.Naam.ToLower().Contains(zoekTerm) || k.Id.ToString().Equals(zoekTerm, StringComparison.OrdinalIgnoreCase))
                 .ToList();
 
             KlantenListView.ItemsSource = gefilterdeKlanten;
@@ -51,20 +51,14 @@ namespace TuinCentrum_UI
 
         private void SearchOfferteButton_Click(object sender, RoutedEventArgs e)
         {
-            string zoekTerm = OfferteZoekTextBox.Text;
-
-            // Probeer de zoekterm om te zetten naar een int voor exacte ID-vergelijking
-            bool isZoektermInt = int.TryParse(zoekTerm, out int zoekTermId);
-
+            string zoekTerm = OfferteZoekTextBox.Text.ToLower();
             var gefilterdeOffertes = allOffertes
-                .Where(o => (isZoektermInt && o.Id == zoekTermId) ||
-                            (o.Klant != null && o.Klant.Naam.ToLower().Contains(zoekTerm.ToLower())))
+                .Where(o => o.Id.ToString().Equals(zoekTerm, StringComparison.OrdinalIgnoreCase) ||
+                            (o.Klant != null && o.Klant.Naam.ToLower().Contains(zoekTerm)))
                 .ToList();
 
             OffertesListView.ItemsSource = gefilterdeOffertes;
-
-            // Clear the search box after search
-            OfferteZoekTextBox.Text = string.Empty;
+            OfferteZoekTextBox.Text = string.Empty; // Clear the search box after search
         }
 
         private void KlantenListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

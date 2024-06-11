@@ -63,5 +63,18 @@ namespace TuinCentrum_BL.Model
             Prijs = prijs;
             Beschrijving = beschrijving;
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Product other)
+            {
+                return string.Equals(Naam, other.Naam, StringComparison.OrdinalIgnoreCase) &&
+                       string.Equals(WetenschappelijkeNaam, other.WetenschappelijkeNaam, StringComparison.OrdinalIgnoreCase) &&
+                       Prijs == other.Prijs &&
+                       string.Equals(Beschrijving, other.Beschrijving, StringComparison.OrdinalIgnoreCase);
+            }
+            return false;
+        }
+
     }
 }

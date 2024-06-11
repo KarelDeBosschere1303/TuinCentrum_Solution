@@ -7,6 +7,7 @@ using TuinCentrum_BL.Managers;
 using TuinCentrum_BL.Model;
 using TuinCentrumDL_File;
 using TuinCentrumDL_SQL;
+using TuinCentrumUi.Viewmodels;
 
 namespace TuinCentrumUi
 {
@@ -25,7 +26,7 @@ namespace TuinCentrumUi
             var tuinCentrumRepository = new TuinCentrumRepository(connectionstring);
             IFileProcessor fileProcessor = new FileProcessor(tuinCentrumRepository);
             tuinCentrumManager = new TuinCentrumManager(tuinCentrumRepository, fileProcessor);
-            
+
             LoadData();
         }
 
@@ -41,7 +42,7 @@ namespace TuinCentrumUi
                 Beschrijving = p.Beschrijving,
                 Aantal = 0
             }).ToList();
-           
+
             geselecteerdeProductenViewModels = new List<ProductOfferteViewModel>();
 
             ProductenDataGrid.ItemsSource = productViewModels;
@@ -190,13 +191,4 @@ namespace TuinCentrumUi
         }
     }
 
-    public class ProductOfferteViewModel
-    {
-        public int Id { get; set; }
-        public string Naam { get; set; }
-        public string WetenschappelijkeNaam { get; set; }
-        public decimal Prijs { get; set; }
-        public string Beschrijving { get; set; }
-        public int Aantal { get; set; }
-    }
 }

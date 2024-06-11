@@ -8,6 +8,7 @@ using TuinCentrum_BL.Model;
 using TuinCentrumDL_File;
 using TuinCentrumDL_SQL;
 using TuinCentrumUi.Viewmodels;
+using System.Configuration;
 
 namespace TuinCentrumUi
 {
@@ -20,10 +21,11 @@ namespace TuinCentrumUi
         public EditOfferWindow(int offerteId)
         {
             InitializeComponent();
-            string connectionstring = @"Data Source=Workmate\SQLEXPRESS;Initial Catalog=Tuincetrum_B;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-
-            tuinCentrumManager = new TuinCentrumManager(new TuinCentrumRepository(connectionstring), new FileProcessor(new TuinCentrumRepository(connectionstring)));
+            InitializeComponent();
+            string connectionString = ConfigurationManager.ConnectionStrings["TuinCentrumDB"].ConnectionString;
+            tuinCentrumManager = new TuinCentrumManager(new TuinCentrumRepository(connectionString), new FileProcessor(new TuinCentrumRepository(connectionString)));
             productQuantities = new List<ProductQuantity>();
+
             LoadOfferte(offerteId);
         }
 
@@ -39,6 +41,7 @@ namespace TuinCentrumUi
                     .ToList();
 
                 ProductenDataGrid.ItemsSource = productQuantities;
+                AlleProductenDataGrid.ItemsSource = tuinCentrumManager.GetAllProducten();
 
                 // Vul de UI velden met de gegevens van de offerte
                 OfferteIdTextBox.Text = _offerte.Id.ToString();
